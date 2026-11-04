@@ -1,0 +1,420 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Wed Nov  4 11:46:52 2026
+
+Top Model           : design_top_wrapper
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 96.18%
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     MIPI_RX_BYTE_CLK -> MIPI_RX_BYTE_CLK
+Type           :     Self
+From Clock     :     MIPI_RX_BYTE_CLK
+To Clock       :     MIPI_RX_BYTE_CLK
+Min Period     :     1.050ns
+Fmax           :     952.381MHz
+
+Statistics:
+Max            : SWNS     15.618ns, STNS      0.000ns,         0 Viol Endpoints,         3 Total Endpoints,         3 Paths Analyzed
+Min            : HWNS      0.178ns, HTNS      0.000ns,         0 Viol Endpoints,         3 Total Endpoints,         3 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 15.618ns
+Begin Point         : u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.clk (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+End Point           : u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.imb (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 16.668ns { MIPI_RX_BYTE_CLK rising@16.668ns - MIPI_RX_BYTE_CLK rising@0.000ns }
+Data Path Delay     : 0.986ns (cell 0.204ns (20%), net 0.782ns (80%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.038          0.038          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.934          0.972          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.016          0.988          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.366          1.354          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.079          1.433          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.655          2.088          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.clk
+launch edge                             0.000    r     2.088               
+--------------------------------------------------------------------  ---------------
+clk2q               x036y036z3          0.126    f     2.214          pin: u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.oqa
+net (fo=1)                              0.782          2.996          net: u_video_store/u_capture/u_starts/read_meta[2],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.imb
+reg                 x036y036z3          0.078    r     3.074          net: u_video_store/u_capture/u_starts/read_sync[2],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.074               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.034          0.034          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.800          0.834          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.014          0.848          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.313          1.161          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.068          1.229          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.570          1.799          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.clk
+capture edge                           16.668    r    18.467               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         18.403               
+clock uncertainty                       0.000         18.403               
+clock pessimism                         0.289         18.692               
+--------------------------------------------------------------------  ---------------
+Required                                              18.692               
+--------------------------------------------------------------------  ---------------
+Slack                                                 15.618               
+
+Slack               : 15.821ns
+Begin Point         : u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.clk (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+End Point           : u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.imb (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 16.668ns { MIPI_RX_BYTE_CLK rising@16.668ns - MIPI_RX_BYTE_CLK rising@0.000ns }
+Data Path Delay     : 0.783ns (cell 0.204ns (26%), net 0.579ns (74%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.038          0.038          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.934          0.972          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.016          0.988          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.366          1.354          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.079          1.433          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.657          2.090          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.clk
+launch edge                             0.000    r     2.090               
+--------------------------------------------------------------------  ---------------
+clk2q               x041y033z7          0.126    f     2.216          pin: u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.oqa
+net (fo=1)                              0.579          2.795          net: u_video_store/u_capture/u_starts/read_meta[1],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.imb
+reg                 x041y033z7          0.078    r     2.873          net: u_video_store/u_capture/u_starts/read_sync[1],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.873               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.034          0.034          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.800          0.834          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.014          0.848          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.313          1.161          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.068          1.229          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.572          1.801          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.clk
+capture edge                           16.668    r    18.469               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         18.405               
+clock uncertainty                       0.000         18.405               
+clock pessimism                         0.289         18.694               
+--------------------------------------------------------------------  ---------------
+Required                                              18.694               
+--------------------------------------------------------------------  ---------------
+Slack                                                 15.821               
+
+Slack               : 16.051ns
+Begin Point         : u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.clk (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+End Point           : u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.imb (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 16.668ns { MIPI_RX_BYTE_CLK rising@16.668ns - MIPI_RX_BYTE_CLK rising@0.000ns }
+Data Path Delay     : 0.553ns (cell 0.204ns (36%), net 0.349ns (64%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.038          0.038          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.934          0.972          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.016          0.988          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.366          1.354          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.079          1.433          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.637          2.070          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.clk
+launch edge                             0.000    r     2.070               
+--------------------------------------------------------------------  ---------------
+clk2q               x035y034z3          0.126    f     2.196          pin: u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.oqa
+net (fo=1)                              0.349          2.545          net: u_video_store/u_capture/u_starts/read_meta[0],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.imb
+reg                 x035y034z3          0.078    r     2.623          net: u_video_store/u_capture/u_starts/read_sync[0],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.623               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.034          0.034          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.800          0.834          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.014          0.848          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.313          1.161          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.068          1.229          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.555          1.784          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.clk
+capture edge                           16.668    r    18.452               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         18.388               
+clock uncertainty                       0.000         18.388               
+clock pessimism                         0.286         18.674               
+--------------------------------------------------------------------  ---------------
+Required                                              18.674               
+--------------------------------------------------------------------  ---------------
+Slack                                                 16.051               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.178ns
+Begin Point         : u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.clk (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+End Point           : u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.imb (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { MIPI_RX_BYTE_CLK rising@0.000ns - MIPI_RX_BYTE_CLK rising@0.000ns }
+Data Path Delay     : 0.190ns (cell 0.088ns (46%), net 0.102ns (54%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.016          0.016          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.360          0.376          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.006          0.382          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.132          0.514          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.025          0.539          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.225          0.764          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.clk
+launch edge                             0.000    r     0.764               
+--------------------------------------------------------------------  ---------------
+clk2q               x035y034z3          0.062    f     0.826          pin: u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.oqa
+net (fo=1)                              0.102          0.928          net: u_video_store/u_capture/u_starts/read_meta[0],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.imb
+reg                 x035y034z3          0.026    f     0.954          net: u_video_store/u_capture/u_starts/read_sync[0],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.954               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.018          0.018          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.391          0.409          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.007          0.416          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.144          0.560          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.030          0.590          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.248          0.838          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[0]_syn_2.clk
+capture edge                            0.000    r     0.838               
+--------------------------------------------------------------------  ---------------
+hold                                    0.012          0.850               
+clock uncertainty                       0.000          0.850               
+clock pessimism                        -0.074          0.776               
+--------------------------------------------------------------------  ---------------
+Required                                               0.776               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.178               
+
+Slack               : 0.238ns
+Begin Point         : u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.clk (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+End Point           : u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.imb (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { MIPI_RX_BYTE_CLK rising@0.000ns - MIPI_RX_BYTE_CLK rising@0.000ns }
+Data Path Delay     : 0.250ns (cell 0.088ns (35%), net 0.162ns (65%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.016          0.016          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.360          0.376          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.006          0.382          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.132          0.514          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.025          0.539          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.230          0.769          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.clk
+launch edge                             0.000    r     0.769               
+--------------------------------------------------------------------  ---------------
+clk2q               x041y033z7          0.062    f     0.831          pin: u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.oqa
+net (fo=1)                              0.162          0.993          net: u_video_store/u_capture/u_starts/read_meta[1],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.imb
+reg                 x041y033z7          0.026    f     1.019          net: u_video_store/u_capture/u_starts/read_sync[1],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.019               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.018          0.018          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.391          0.409          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.007          0.416          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.144          0.560          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.030          0.590          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.253          0.843          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[1]_syn_2.clk
+capture edge                            0.000    r     0.843               
+--------------------------------------------------------------------  ---------------
+hold                                    0.012          0.855               
+clock uncertainty                       0.000          0.855               
+clock pessimism                        -0.074          0.781               
+--------------------------------------------------------------------  ---------------
+Required                                               0.781               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.238               
+
+Slack               : 0.305ns
+Begin Point         : u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.clk (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+End Point           : u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.imb (rising edge triggered by clock MIPI_RX_BYTE_CLK  { rise@0.000000ns  fall@8.332000ns  period=16.667999 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { MIPI_RX_BYTE_CLK rising@0.000ns - MIPI_RX_BYTE_CLK rising@0.000ns }
+Data Path Delay     : 0.317ns (cell 0.088ns (27%), net 0.229ns (73%))
+Clock Skew          : 0.000ns
+Logic Level         : 0
+Max Fanout          : 1
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.016          0.016          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.360          0.376          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.006          0.382          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.132          0.514          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.025          0.539          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.228          0.767          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.clk
+launch edge                             0.000    r     0.767               
+--------------------------------------------------------------------  ---------------
+clk2q               x036y036z3          0.062    f     0.829          pin: u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.oqa
+net (fo=1)                              0.229          1.058          net: u_video_store/u_capture/u_starts/read_meta[2],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.imb
+reg                 x036y036z3          0.026    f     1.084          net: u_video_store/u_capture/u_starts/read_sync[2],  ../../../user_source/hdl_source/motion_meta_fifo.v(17)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.084               
+
+source latency                          0.000          0.000               
+port                                    0.000          0.000          pin: IO_rx_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.io_clk_pad_p
+hierarchy                               0.000          0.000          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.tif_c16_in
+hierarchy                               0.018          0.018          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/u_PH1P_LOGIC_DPHY_MIPI_RX.o_fabric_div4_8_clk
+net (fo=1)                              0.391          0.409          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/S_mipiio_hs_rx_clk,  ../../../user_source/hdl_source/mipi_dphy_rx/ph1p_mipiio_rx_wrapper.v(115)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkin[0]
+GCLK                x023y039z0          0.007          0.416          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback.clkout
+net (fo=4)                              0.144          0.560          net: u_isp_top/u_demosaic/raw_matrix_3x3_buffer_d/zhenghe_d/blk_mem_gen_zhenghe_d1/ram_d32970204f32_Inst/clkb,  ../../../user_source/hdl_source/isp/demosaic_4x_2_0/blk_mem_gen_zhenghe/RTL/ram_d32970204f32.v(51)
+                                                                      pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkin
+SCLK                x023y019z13         0.030          0.590          pin: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2.clkout
+net (fo=617)                            0.251          0.841          net: u_mipi_dphy_rx_ph1p_mipiio_wrapper/u_ph1p_mipiio_rx_wrapper/bufg_feedback_auto_created_sclk_s_0_r_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_video_store/u_capture/u_starts/read_meta_reg[2]_syn_2.clk
+capture edge                            0.000    r     0.841               
+--------------------------------------------------------------------  ---------------
+hold                                    0.012          0.853               
+clock uncertainty                       0.000          0.853               
+clock pessimism                        -0.074          0.779               
+--------------------------------------------------------------------  ---------------
+Required                                               0.779               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.305               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

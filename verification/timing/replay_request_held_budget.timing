@@ -1,0 +1,323 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Wed Nov  4 11:47:37 2026
+
+Top Model           : design_top_wrapper
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 96.18%
+
+
+
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     
+set_max_delay -through [get_nets -hierarchical {*u_replay_request/held[*]}] -to [get_clocks {u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk}] 25.0 -datapath_only
+
+Type           :     SMD
+
+Statistics:
+Max            : SWNS     23.833ns, STNS      0.000ns,         0 Viol Endpoints,         3 Total Endpoints,         3 Paths Analyzed
+Min            : HWNS      0.000ns, HTNS      0.000ns,         0 Viol Endpoints,         0 Total Endpoints,         0 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 23.833ns
+Begin Point         : u_replay_request/held_reg[1]_syn_5.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_replay_request/d_data_reg[1]_syn_5.imf (rising edge triggered by clock u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk  { rise@0.000000ns  fall@7.500000ns  period=15.000000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 25.000ns { u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 1.103ns (cell 0.343ns (31%), net 0.760ns (69%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT4=1 )
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.130ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.000          0.000          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079            0.000          0.000          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.000          0.000          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.000          0.000          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_replay_request/held_reg[1]_syn_5.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x021y041z1          0.126    f     0.126          pin: u_replay_request/held_reg[1]_syn_5.oqa
+net (fo=2)                              0.760          0.886          net: u_replay_request/held[1],  ../../../user_source/hdl_source/ae_mailbox.v(7)
+                                                                      pin: u_replay_request/d_data_reg[1]_syn_5.imf
+LUT4 (reg)          x025y040z4          0.217    f     1.103       1  net: u_video_store/u_slots/view_lane_i[1],  ../../../user_source/hdl_source/motion_frame_store_ctrl.v(32)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.103               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.di
+net (fo=3)          x000y040            0.000          0.000          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll0/u_pll_inst.refclk
+PLL                 x000y040            0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll0/u_pll_inst.clkc[0]
+net (fo=1)          x000y079            0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/refclk,  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/clk/ph1p_ddrphy_pll1.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_pll_inst.refclk
+PLL                 x000y079            0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_pll_inst.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/clkc[0],  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/clk/ph1p_ddrphy_pll1.v(52)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk.clkin[0]
+GCLK                x023y039z17         0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk.clkout
+net (fo=4)                              0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/clk,  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/mc/alc_mc_top_all.enc.sv(25)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4.clkin
+SCLK                x023y059z15         0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4.clkout
+net (fo=445)                            0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_replay_request/d_data_reg[1]_syn_5.clk
+constraint delay                       25.000         25.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         24.936               
+clock uncertainty                       0.000         24.936               
+clock pessimism                         0.000         24.936               
+--------------------------------------------------------------------  ---------------
+Required                                              24.936               
+--------------------------------------------------------------------  ---------------
+Slack                                                 23.833               
+
+Slack               : 24.166ns
+Begin Point         : u_replay_request/held_reg[2]_syn_5.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_replay_request/d_data_reg[2]_syn_5.ie (rising edge triggered by clock u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk  { rise@0.000000ns  fall@7.500000ns  period=15.000000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 25.000ns { u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.770ns (cell 0.280ns (36%), net 0.490ns (64%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT4=1 )
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.105ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.000          0.000          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079            0.000          0.000          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.000          0.000          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_r_bk3.clkin
+SCLK                x023y059z14         0.000          0.000          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_r_bk3.clkout
+net (fo=978)                            0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_replay_request/held_reg[2]_syn_5.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x026y040z5          0.126    f     0.126          pin: u_replay_request/held_reg[2]_syn_5.oqa
+net (fo=2)                              0.490          0.616          net: u_replay_request/held[0],  ../../../user_source/hdl_source/ae_mailbox.v(7)
+                                                                      pin: u_replay_request/d_data_reg[2]_syn_5.ie
+LUT4 (reg)          x026y040z2          0.154    r     0.770       1  net: u_video_store/u_slots/view_lane_i[0],  ../../../user_source/hdl_source/motion_frame_store_ctrl.v(32)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.770               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.di
+net (fo=3)          x000y040            0.000          0.000          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll0/u_pll_inst.refclk
+PLL                 x000y040            0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll0/u_pll_inst.clkc[0]
+net (fo=1)          x000y079            0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/refclk,  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/clk/ph1p_ddrphy_pll1.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_pll_inst.refclk
+PLL                 x000y079            0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_pll_inst.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/clkc[0],  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/clk/ph1p_ddrphy_pll1.v(52)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk.clkin[0]
+GCLK                x023y039z17         0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk.clkout
+net (fo=4)                              0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/clk,  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/mc/alc_mc_top_all.enc.sv(25)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4.clkin
+SCLK                x023y059z15         0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4.clkout
+net (fo=445)                            0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_replay_request/d_data_reg[2]_syn_5.clk
+constraint delay                       25.000         25.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         24.936               
+clock uncertainty                       0.000         24.936               
+clock pessimism                         0.000         24.936               
+--------------------------------------------------------------------  ---------------
+Required                                              24.936               
+--------------------------------------------------------------------  ---------------
+Slack                                                 24.166               
+
+Slack               : 24.197ns
+Begin Point         : u_replay_request/held_reg[2]_syn_5.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_replay_request/d_data_reg[2]_syn_5.imf (rising edge triggered by clock u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk  { rise@0.000000ns  fall@7.500000ns  period=15.000000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 25.000ns { u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.739ns (cell 0.354ns (47%), net 0.385ns (53%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT4=1 )
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.105ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.000          0.000          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079            0.000          0.000          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.000          0.000          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_r_bk3.clkin
+SCLK                x023y059z14         0.000          0.000          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_r_bk3.clkout
+net (fo=978)                            0.000          0.000          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_r_bk3_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_replay_request/held_reg[2]_syn_5.clk
+--------------------------------------------------------------------  ---------------
+clk2q               x026y040z5          0.137    r     0.137          pin: u_replay_request/held_reg[2]_syn_5.oqb
+net (fo=2)                              0.385          0.522          net: u_replay_request/held[2],  ../../../user_source/hdl_source/ae_mailbox.v(7)
+                                                                      pin: u_replay_request/d_data_reg[2]_syn_5.imf
+LUT4 (reg)          x026y040z2          0.217    f     0.739       1  net: S_replay_request_ddr[2],  ../../../user_source/hdl_source/design_top_wrapper.v(760)
+--------------------------------------------------------------------  ---------------
+Arrival                                                0.739               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.000          0.000          pin: I_sys_clk_syn_7.di
+net (fo=3)          x000y040            0.000          0.000          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll0/u_pll_inst.refclk
+PLL                 x000y040            0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll0/u_pll_inst.clkc[0]
+net (fo=1)          x000y079            0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/refclk,  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/clk/ph1p_ddrphy_pll1.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_pll_inst.refclk
+PLL                 x000y079            0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_pll_inst.clkc[0]
+net (fo=1)                              0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/clkc[0],  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/clk/ph1p_ddrphy_pll1.v(52)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk.clkin[0]
+GCLK                x023y039z17         0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk.clkout
+net (fo=4)                              0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/clk,  ../../../user_source/hdl_source/ph1p35_ddr/ddr2/src/rtl/mc/alc_mc_top_all.enc.sv(25)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4.clkin
+SCLK                x023y059z15         0.000          0.000          pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4.clkout
+net (fo=445)                            0.000          0.000          net: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_clk/u_pll1/u_bufg_fbclk_auto_created_sclk_s_1_r_bk4_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_replay_request/d_data_reg[2]_syn_5.clk
+constraint delay                       25.000         25.000               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         24.936               
+clock uncertainty                       0.000         24.936               
+clock pessimism                         0.000         24.936               
+--------------------------------------------------------------------  ---------------
+Required                                              24.936               
+--------------------------------------------------------------------  ---------------
+Slack                                                 24.197               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Exclusive Clock Groups
+--------------------
+
+Set False Path
+--------------------
+
+From flow sdc
+--------------------
+----------------------------------------------------------------------------------------------------
+Path Group     :     Set False Path
+Constr         :     set_false_path -through [get_nets -hierarchical {*u_replay_request/held[*]}] -to [get_clocks {u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk}] 25.0 -hold
+
+Statistics:
+	Setup Check    :              0   end points,               0   paths
+----------------------------------------------------------------------------------------------------
+
+
+Min Delay Paths
+----------------------------------------------------------------------------------------------------
+Begin Point         : u_replay_request/held_reg[1]_syn_5.clk(triggered by clock HDMI_PIXEL_CLK)
+End Point           : u_replay_request/d_data_reg[1]_syn_5.imf(triggered by clock u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x021y041z1                                        pin: u_replay_request/held_reg[1]_syn_5.oqa
+net (fo=2)                                                            net: u_replay_request/held[1],  ../../../user_source/hdl_source/ae_mailbox.v(7)
+                                                                      pin: u_replay_request/d_data_reg[1]_syn_5.imf
+LUT4 (reg)          x025y040z4                                        net: u_video_store/u_slots/view_lane_i[1],  ../../../user_source/hdl_source/motion_frame_store_ctrl.v(32)
+
+
+Begin Point         : u_replay_request/held_reg[2]_syn_5.clk(triggered by clock HDMI_PIXEL_CLK)
+End Point           : u_replay_request/d_data_reg[2]_syn_5.imf(triggered by clock u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x026y040z5                                        pin: u_replay_request/held_reg[2]_syn_5.oqb
+net (fo=2)                                                            net: u_replay_request/held[2],  ../../../user_source/hdl_source/ae_mailbox.v(7)
+                                                                      pin: u_replay_request/d_data_reg[2]_syn_5.imf
+LUT4 (reg)          x026y040z2                                        net: S_replay_request_ddr[2],  ../../../user_source/hdl_source/design_top_wrapper.v(760)
+
+
+Begin Point         : u_replay_request/held_reg[2]_syn_5.clk(triggered by clock HDMI_PIXEL_CLK)
+End Point           : u_replay_request/d_data_reg[2]_syn_5.ie(triggered by clock u_ph1p35_324_ddr_wrapper/u_ddr2/usr_clk)
+Check Type          : hold
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+clk2q               x026y040z5                                        pin: u_replay_request/held_reg[2]_syn_5.oqa
+net (fo=2)                                                            net: u_replay_request/held[0],  ../../../user_source/hdl_source/ae_mailbox.v(7)
+                                                                      pin: u_replay_request/d_data_reg[2]_syn_5.ie
+LUT4 (reg)          x026y040z2                                        net: u_video_store/u_slots/view_lane_i[0],  ../../../user_source/hdl_source/motion_frame_store_ctrl.v(32)
+
+
+
+From ip sdc
+--------------------
+
+u_video_out/U_w128_d512_fifo
+--------------------
+
+u_video_store/u_capture/u_payload
+--------------------

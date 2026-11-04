@@ -1,0 +1,7 @@
+# 本仓库用 SHA256 清单校验文件内容，禁止任何换行/编码转换。
+* -text
+
+*.bit binary
+*.db binary
+*.zip binary
+*.hex binary

@@ -1,0 +1,1723 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Wed Nov  4 11:48:07 2026
+
+Top Model           : design_top_wrapper
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 96.18%
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     HDMI_PIXEL_CLK -> HDMI_PIXEL_CLK
+Type           :     Self
+From Clock     :     HDMI_PIXEL_CLK
+To Clock       :     HDMI_PIXEL_CLK
+Min Period     :     8.863ns
+Fmax           :     112.829MHz
+
+Statistics:
+Max            : SWNS      4.470ns, STNS      0.000ns,         0 Viol Endpoints,        10 Total Endpoints,        10 Paths Analyzed
+Min            : HWNS      0.710ns, HTNS      0.000ns,         0 Viol Endpoints,        10 Total Endpoints,        10 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 4.470ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[11] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 8.489ns (cell 2.070ns (24%), net 6.419ns (76%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT3=1  LUT2=1  ERAM=1 )
+Max Fanout          : 98
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             1.452          6.122          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.id
+LUT2                x005y049z3          0.266    f     6.388       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.ofa
+net (fo=98)                             1.605          7.993          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_429.ia
+LUT6                x005y054z4          0.386    f     8.379       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_429.relut6
+net (fo=1)                              0.000          8.379          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_434[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_192.muxi[0]
+F78MUX              x005y054            0.141    r     8.520          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_192.f8muxo
+net (fo=1)                              0.000          8.520          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_438,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_431.f78i
+                    x005y054z6          0.078    f     8.598          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_431.ofa
+net (fo=1)                              0.577          9.175          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[7]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[8]_syn_2.id
+LUT3                x006y055z1          0.266    f     9.441       5  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[8]_syn_2.ofa
+net (fo=6)                              0.954         10.395          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[7],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[11]
+ERAM (reg)          x007y048            0.000    f    10.395       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                               10.395               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.278         14.872               
+clock uncertainty                      -0.102         14.770               
+clock pessimism                         0.095         14.865               
+--------------------------------------------------------------------  ---------------
+Required                                              14.865               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.470               
+
+Slack               : 4.527ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[13] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 8.438ns (cell 2.095ns (24%), net 6.343ns (76%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT3=1  LUT2=1  ERAM=1 )
+Max Fanout          : 99
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             0.981          5.651          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[1]_syn_12.id
+LUT2                x020y052z3          0.266    f     5.917       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[1]_syn_12.ofa
+net (fo=99)                             1.964          7.881          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_479.ib
+LUT6                x002y055z0          0.405    f     8.286       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_479.relut6
+net (fo=1)                              0.000          8.286          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_484[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_241.muxi[0]
+F78MUX              x002y055            0.141    r     8.427          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_241.f8muxo
+net (fo=1)                              0.000          8.427          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_488,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_481.f78i
+                    x002y055z2          0.078    f     8.505          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_481.ofa
+net (fo=1)                              0.826          9.331          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[9]_syn_1[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[9]_syn_2.imf
+LUT3                x006y055z2          0.272    f     9.603       5  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[9]_syn_2.ofa
+net (fo=6)                              0.741         10.344          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[9],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[13]
+ERAM (reg)          x007y048            0.000    f    10.344       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                               10.344               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.272         14.878               
+clock uncertainty                      -0.102         14.776               
+clock pessimism                         0.095         14.871               
+--------------------------------------------------------------------  ---------------
+Required                                              14.871               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.527               
+
+Slack               : 4.847ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[6] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 8.104ns (cell 2.087ns (25%), net 6.017ns (75%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 98
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             1.452          6.122          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.id
+LUT2                x005y049z3          0.266    f     6.388       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.ofa
+net (fo=98)                             1.605          7.993          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_339.ia
+LUT6                x005y054z0          0.386    f     8.379       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_339.relut6
+net (fo=1)                              0.000          8.379          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_344[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_80.muxi[0]
+F78MUX              x005y054            0.141    r     8.520          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_80.f8muxo
+net (fo=1)                              0.000          8.520          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_348,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_341.f78i
+                    x005y054z2          0.078    f     8.598          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_341.ofa
+net (fo=1)                              0.399          8.997          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[2]_syn_1[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_cmd_r1_reg[0]_syn_5.ic
+LUT4                x005y051z7          0.283    r     9.280       5  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_cmd_r1_reg[0]_syn_5.ofb
+net (fo=6)                              0.730         10.010          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[2],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[6]
+ERAM (reg)          x007y048            0.000    f    10.010       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                               10.010               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.286         14.864               
+clock uncertainty                      -0.102         14.762               
+clock pessimism                         0.095         14.857               
+--------------------------------------------------------------------  ---------------
+Required                                              14.857               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.847               
+
+Slack               : 4.880ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[4] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 8.037ns (cell 2.214ns (27%), net 5.823ns (73%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 98
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             1.452          6.122          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.id
+LUT2                x005y049z3          0.266    f     6.388       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.ofa
+net (fo=98)                             1.708          8.096          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_299.ia
+LUT6                x005y052z4          0.386    f     8.482       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_299.relut6
+net (fo=1)                              0.000          8.482          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_304[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_34.muxi[0]
+F78MUX              x005y052            0.141    r     8.623          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_34.f8muxo
+net (fo=1)                              0.000          8.623          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_308,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_301.f78i
+                    x005y052z6          0.078    f     8.701          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_301.ofa
+net (fo=1)                              0.293          8.994          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[0]_syn_1[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[0]_syn_3.ima
+LUT4                x006y051z7          0.410    f     9.404       5  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[0]_syn_3.ofa
+net (fo=6)                              0.539          9.943          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[4]
+ERAM (reg)          x007y048            0.000    f     9.943       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                                9.943               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.320         14.830               
+clock uncertainty                      -0.102         14.728               
+clock pessimism                         0.095         14.823               
+--------------------------------------------------------------------  ---------------
+Required                                              14.823               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.880               
+
+Slack               : 4.933ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[7] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 8.026ns (cell 2.214ns (27%), net 5.812ns (73%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 98
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             1.452          6.122          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.id
+LUT2                x005y049z3          0.266    f     6.388       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.ofa
+net (fo=98)                             1.696          8.084          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_349.ia
+LUT6                x005y053z0          0.386    f     8.470       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_349.relut6
+net (fo=1)                              0.000          8.470          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_354[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_100.muxi[0]
+F78MUX              x005y053            0.141    r     8.611          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_100.f8muxo
+net (fo=1)                              0.000          8.611          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_358,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_351.f78i
+                    x005y053z2          0.078    f     8.689          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_351.ofa
+net (fo=1)                              0.405          9.094          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[3]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_9.ima
+LUT4                x006y051z6          0.410    f     9.504       5  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_9.ofa
+net (fo=6)                              0.428          9.932          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[3],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[7]
+ERAM (reg)          x007y048            0.000    f     9.932       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                                9.932               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.278         14.872               
+clock uncertainty                      -0.102         14.770               
+clock pessimism                         0.095         14.865               
+--------------------------------------------------------------------  ---------------
+Required                                              14.865               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.933               
+
+Slack               : 5.101ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[5] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 7.846ns (cell 2.087ns (26%), net 5.759ns (74%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 98
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             1.452          6.122          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.id
+LUT2                x005y049z3          0.266    f     6.388       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.ofa
+net (fo=98)                             1.468          7.856          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_309.ia
+LUT6                x006y054z0          0.386    f     8.242       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_309.relut6
+net (fo=1)                              0.000          8.242          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_314[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_54.muxi[0]
+F78MUX              x006y054            0.141    r     8.383          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_54.f8muxo
+net (fo=1)                              0.000          8.383          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_318,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_311.f78i
+                    x006y054z2          0.078    f     8.461          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_311.ofa
+net (fo=1)                              0.385          8.846          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[1]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4]_syn_3.ic
+LUT4                x006y052z6          0.283    r     9.129       5  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4]_syn_3.ofb
+net (fo=6)                              0.623          9.752          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[5]
+ERAM (reg)          x007y048            0.000    f     9.752       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                                9.752               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.290         14.860               
+clock uncertainty                      -0.102         14.758               
+clock pessimism                         0.095         14.853               
+--------------------------------------------------------------------  ---------------
+Required                                              14.853               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.101               
+
+Slack               : 5.170ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[9] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 7.785ns (cell 2.075ns (26%), net 5.710ns (74%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 98
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             1.452          6.122          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.id
+LUT2                x005y049z3          0.266    f     6.388       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.ofa
+net (fo=98)                             1.605          7.993          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_399.ia
+LUT6                x004y054z0          0.386    f     8.379       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_399.relut6
+net (fo=1)                              0.000          8.379          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_404[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_149.muxi[0]
+F78MUX              x004y054            0.141    r     8.520          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_149.f8muxo
+net (fo=1)                              0.000          8.520          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_408,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_401.f78i
+                    x004y054z2          0.078    f     8.598          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_401.ofa
+net (fo=1)                              0.414          9.012          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[5]_syn_1[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_9.imb
+LUT4                x006y051z6          0.271    r     9.283       5  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_9.ofb
+net (fo=6)                              0.408          9.691          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[9]
+ERAM (reg)          x007y048            0.000    f     9.691       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                                9.691               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.282         14.868               
+clock uncertainty                      -0.102         14.766               
+clock pessimism                         0.095         14.861               
+--------------------------------------------------------------------  ---------------
+Required                                              14.861               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.170               
+
+Slack               : 5.201ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[12] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 7.732ns (cell 2.106ns (27%), net 5.626ns (73%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT3=1  LUT2=1  ERAM=1 )
+Max Fanout          : 99
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             0.981          5.651          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[1]_syn_12.id
+LUT2                x020y052z3          0.266    f     5.917       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[1]_syn_12.ofa
+net (fo=99)                             1.801          7.718          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_449.ib
+LUT6                x006y055z4          0.405    f     8.123       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_449.relut6
+net (fo=1)                              0.000          8.123          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_454[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_215.muxi[0]
+F78MUX              x006y055            0.141    r     8.264          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_215.f8muxo
+net (fo=1)                              0.000          8.264          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_458,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_451.f78i
+                    x006y055z6          0.078    f     8.342          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_451.ofa
+net (fo=1)                              0.185          8.527          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[8]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[9]_syn_2.ic
+LUT3                x006y055z2          0.283    r     8.810       5  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[9]_syn_2.ofb
+net (fo=6)                              0.828          9.638          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[8],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[12]
+ERAM (reg)          x007y048            0.000    f     9.638       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                                9.638               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.304         14.846               
+clock uncertainty                      -0.102         14.744               
+clock pessimism                         0.095         14.839               
+--------------------------------------------------------------------  ---------------
+Required                                              14.839               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.201               
+
+Slack               : 5.278ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[8] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 7.690ns (cell 2.214ns (28%), net 5.476ns (72%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 98
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             1.452          6.122          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.id
+LUT2                x005y049z3          0.266    f     6.388       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.ofa
+net (fo=98)                             1.385          7.773          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_369.ia
+LUT6                x006y053z4          0.386    f     8.159       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_369.relut6
+net (fo=1)                              0.000          8.159          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_374[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_123.muxi[0]
+F78MUX              x006y053            0.141    r     8.300          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_123.f8muxo
+net (fo=1)                              0.000          8.300          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_378,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_371.f78i
+                    x006y053z6          0.078    f     8.378          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_371.ofa
+net (fo=1)                              0.369          8.747          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[4]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4]_syn_3.ima
+LUT4                x006y052z6          0.410    f     9.157       5  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4]_syn_3.ofa
+net (fo=6)                              0.439          9.596          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[8]
+ERAM (reg)          x007y048            0.000    f     9.596       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                                9.596               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.269         14.881               
+clock uncertainty                      -0.102         14.779               
+clock pessimism                         0.095         14.874               
+--------------------------------------------------------------------  ---------------
+Required                                              14.874               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.278               
+
+Slack               : 5.487ns
+Begin Point         : u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[10] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 7.468ns (cell 2.087ns (27%), net 5.381ns (73%))
+Clock Skew          : 0.006ns
+Logic Level         : 6 ( LUT6=2  LUT5=1  LUT3=1  LUT2=1  ERAM=1 )
+Max Fanout          : 98
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.387          1.192          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.079          1.271          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.635          1.906          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.clk
+launch edge                             0.000    r     1.906               
+--------------------------------------------------------------------  ---------------
+clk2q               x012y061z7          0.126    f     2.032          pin: u_hdmi_mixer/S_video_de_1d_reg_syn_3.oqa
+net (fo=22)                             1.752          3.784          net: u_hdmi_mixer/S_video_de_1d,  ../../../user_source/hdl_source/hdmi_mixer.v(123)
+                                                                      pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ia
+LUT6                x010y041z1          0.408    f     4.192       1  pin: u_hdmi_mixer/S_x_2d_reg[3]_syn_2.ofb
+net (fo=1)                              0.079          4.271          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_2,  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ia
+LUT5                x010y041z2          0.399    f     4.670       2  pin: u_hdmi_mixer/S_x_1d_reg[0]_syn_2.ofb
+net (fo=13)                             1.452          6.122          net: u_hdmi_mixer/logo_prefetch_inside,  ../../../user_source/hdl_source/hdmi_mixer.v(806)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.id
+LUT2                x005y049z3          0.266    f     6.388       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[0]_syn_6.ofa
+net (fo=98)                             1.297          7.685          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_412.ia
+LUT6                x005y055z3          0.386    f     8.071       4  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_412.relut6
+net (fo=1)                              0.000          8.071          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_414[3],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_169.muxi[3]
+F78MUX              x005y055            0.141    r     8.212          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_169.f8muxo
+net (fo=1)                              0.000          8.212          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_418,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_411.f78i
+                    x005y055z2          0.078    f     8.290          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_411.ofa
+net (fo=1)                              0.174          8.464          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[6]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[8]_syn_2.ic
+LUT3                x006y055z1          0.283    r     8.747       5  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[8]_syn_2.ofb
+net (fo=6)                              0.627          9.374          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[6],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[10]
+ERAM (reg)          x007y048            0.000    f     9.374       6       
+--------------------------------------------------------------------  ---------------
+Arrival                                                9.374               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.332          1.115          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.068          1.183          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.634          1.817          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                           13.333    r    15.150               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.282         14.868               
+clock uncertainty                      -0.102         14.766               
+clock pessimism                         0.095         14.861               
+--------------------------------------------------------------------  ---------------
+Required                                              14.861               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.487               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.710ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[7] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.885ns (cell 0.297ns (33%), net 0.588ns (67%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.074          1.688          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_359.ie
+LUT6                x006y052z0          0.046    f     1.734       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_359.relut6
+net (fo=1)                              0.000          1.734          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_364[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_103.muxi[0]
+F78MUX              x006y052            0.035    r     1.769          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_103.f8muxo
+net (fo=1)                              0.000          1.769          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_368,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_361.f78i
+                    x006y052z2          0.027    f     1.796          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_361.ofa
+net (fo=1)                              0.089          1.885          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[3]_syn_1[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_9.id
+LUT4                x006y051z6          0.072    f     1.957       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_9.ofa
+net (fo=6)                              0.126          2.083          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[3],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[7]
+ERAM (reg)          x007y048            0.000    f     2.083       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.083               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.076          1.455               
+clock uncertainty                       0.050          1.505               
+clock pessimism                        -0.132          1.373               
+--------------------------------------------------------------------  ---------------
+Required                                               1.373               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.710               
+
+Slack               : 0.757ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[9] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.925ns (cell 0.303ns (32%), net 0.622ns (68%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.081          1.695          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_399.ie
+LUT6                x004y054z0          0.046    f     1.741       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_399.relut6
+net (fo=1)                              0.000          1.741          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_404[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_149.muxi[0]
+F78MUX              x004y054            0.035    r     1.776          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_149.f8muxo
+net (fo=1)                              0.000          1.776          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_408,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_401.f78i
+                    x004y054z2          0.027    f     1.803          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_401.ofa
+net (fo=1)                              0.129          1.932          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[5]_syn_1[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_9.imb
+LUT4                x006y051z6          0.078    f     2.010       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5]_syn_9.ofb
+net (fo=6)                              0.113          2.123          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[5],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[9]
+ERAM (reg)          x007y048            0.000    f     2.123       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.123               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.069          1.448               
+clock uncertainty                       0.050          1.498               
+clock pessimism                        -0.132          1.366               
+--------------------------------------------------------------------  ---------------
+Required                                               1.366               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.757               
+
+Slack               : 0.820ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[10] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.978ns (cell 0.305ns (31%), net 0.673ns (69%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT3=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.138          1.752          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_409.ie
+LUT6                x005y055z0          0.046    f     1.798       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_409.relut6
+net (fo=1)                              0.000          1.798          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_414[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_169.muxi[0]
+F78MUX              x005y055            0.035    r     1.833          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_169.f8muxo
+net (fo=1)                              0.000          1.833          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_418,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_411.f78i
+                    x005y055z2          0.027    f     1.860          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_411.ofa
+net (fo=1)                              0.053          1.913          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[6]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[8]_syn_2.ic
+LUT3                x006y055z1          0.080    f     1.993       3  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[8]_syn_2.ofb
+net (fo=6)                              0.183          2.176          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[6],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[10]
+ERAM (reg)          x007y048            0.000    f     2.176       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.176               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.059          1.438               
+clock uncertainty                       0.050          1.488               
+clock pessimism                        -0.132          1.356               
+--------------------------------------------------------------------  ---------------
+Required                                               1.356               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.820               
+
+Slack               : 0.826ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[5] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.981ns (cell 0.303ns (30%), net 0.678ns (70%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.115          1.729          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_319.ie
+LUT6                x006y053z0          0.046    f     1.775       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_319.relut6
+net (fo=1)                              0.000          1.775          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_324[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_57.muxi[0]
+F78MUX              x006y053            0.035    r     1.810          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_57.f8muxo
+net (fo=1)                              0.000          1.810          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_328,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_321.f78i
+                    x006y053z2          0.027    f     1.837          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_321.ofa
+net (fo=1)                              0.087          1.924          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[1]_syn_1[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4]_syn_3.imb
+LUT4                x006y052z6          0.078    f     2.002       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4]_syn_3.ofb
+net (fo=6)                              0.177          2.179          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[1],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[5]
+ERAM (reg)          x007y048            0.000    f     2.179       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.179               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.056          1.435               
+clock uncertainty                       0.050          1.485               
+clock pessimism                        -0.132          1.353               
+--------------------------------------------------------------------  ---------------
+Required                                               1.353               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.826               
+
+Slack               : 0.853ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[13] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 1.017ns (cell 0.297ns (29%), net 0.720ns (71%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT3=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.106          1.720          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_469.ie
+LUT6                x003y055z0          0.046    f     1.766       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_469.relut6
+net (fo=1)                              0.000          1.766          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_474[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_238.muxi[0]
+F78MUX              x003y055            0.035    r     1.801          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_238.f8muxo
+net (fo=1)                              0.000          1.801          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_478,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_471.f78i
+                    x003y055z2          0.027    f     1.828          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_471.ofa
+net (fo=1)                              0.101          1.929          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[9]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[9]_syn_2.id
+LUT3                x006y055z2          0.072    f     2.001       3  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[9]_syn_2.ofa
+net (fo=6)                              0.214          2.215          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[9],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[13]
+ERAM (reg)          x007y048            0.000    f     2.215       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.215               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.065          1.444               
+clock uncertainty                       0.050          1.494               
+clock pessimism                        -0.132          1.362               
+--------------------------------------------------------------------  ---------------
+Required                                               1.362               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.853               
+
+Slack               : 0.853ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[4] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 1.007ns (cell 0.366ns (36%), net 0.641ns (64%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.100          1.714          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_289.ie
+LUT6                x005y052z0          0.046    f     1.760       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_289.relut6
+net (fo=1)                              0.000          1.760          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_294[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_31.muxi[0]
+F78MUX              x005y052            0.035    r     1.795          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_31.f8muxo
+net (fo=1)                              0.000          1.795          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_298,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_291.f78i
+                    x005y052z2          0.027    f     1.822          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_291.ofa
+net (fo=1)                              0.086          1.908          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[0]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[0]_syn_3.ib
+LUT4                x006y051z7          0.141    f     2.049       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[0]_syn_3.ofa
+net (fo=6)                              0.156          2.205          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[4]
+ERAM (reg)          x007y048            0.000    f     2.205       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.205               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.055          1.434               
+clock uncertainty                       0.050          1.484               
+clock pessimism                        -0.132          1.352               
+--------------------------------------------------------------------  ---------------
+Required                                               1.352               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.853               
+
+Slack               : 0.867ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[8] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 1.035ns (cell 0.340ns (32%), net 0.695ns (68%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.152          1.766          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_369.ie
+LUT6                x006y053z4          0.046    f     1.812       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_369.relut6
+net (fo=1)                              0.000          1.812          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_374[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_123.muxi[0]
+F78MUX              x006y053            0.035    r     1.847          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_123.f8muxo
+net (fo=1)                              0.000          1.847          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_378,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_371.f78i
+                    x006y053z6          0.027    f     1.874          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_371.ofa
+net (fo=1)                              0.114          1.988          net: u_hdmi_mixer/u_anlogic_logo_rom/displacement[4]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(10)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4]_syn_3.ima
+LUT4                x006y052z6          0.115    f     2.103       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4]_syn_3.ofa
+net (fo=6)                              0.130          2.233          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[8]
+ERAM (reg)          x007y048            0.000    f     2.233       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.233               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.069          1.448               
+clock uncertainty                       0.050          1.498               
+clock pessimism                        -0.132          1.366               
+--------------------------------------------------------------------  ---------------
+Required                                               1.366               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.867               
+
+Slack               : 0.877ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[1]_syn_6.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[6] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 1.044ns (cell 0.368ns (35%), net 0.676ns (65%))
+Clock Skew          : 0.049ns
+Logic Level         : 5 ( ADDER=2  LUT4=1  LUT2=1  ERAM=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[1]_syn_6.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[1]_syn_6.oqb
+net (fo=5)                              0.055          1.318          net: u_hdmi_mixer/S_y_1d[0],  ../../../user_source/hdl_source/hdmi_mixer.v(149)
+                                                                      pin: u_hdmi_mixer/add5_syn_131.id
+ADDER               x009y041z5          0.097    r     1.415       1  pin: u_hdmi_mixer/add5_syn_131.fco
+net (fo=1)                              0.000          1.415          net: u_hdmi_mixer/add5_syn_78[3],  ../../../user_source/hdl_source/hdmi_mixer.v(810)
+                                                                      pin: u_hdmi_mixer/add5_syn_132.fci
+ADDER               x009y041z6          0.082    f     1.497       2  pin: u_hdmi_mixer/add5_syn_132.ofb
+net (fo=1)                              0.213          1.710          net: u_hdmi_mixer/add5_syn_3[3],  ../../../user_source/hdl_source/hdmi_mixer.v(810)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[8]_syn_2.id
+LUT2                x005y049z6          0.072    f     1.782       3  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[8]_syn_2.ofa
+net (fo=7)                              0.198          1.980          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[8],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_cmd_r1_reg[0]_syn_5.ie
+LUT4                x005y051z7          0.052    f     2.032       4  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_cmd_r1_reg[0]_syn_5.ofb
+net (fo=6)                              0.210          2.242          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[2],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[6]
+ERAM (reg)          x007y048            0.000    f     2.242       5       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.242               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.068          1.447               
+clock uncertainty                       0.050          1.497               
+clock pessimism                        -0.132          1.365               
+--------------------------------------------------------------------  ---------------
+Required                                               1.365               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.877               
+
+Slack               : 0.950ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[12] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 1.110ns (cell 0.305ns (27%), net 0.805ns (73%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT3=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.200          1.814          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_449.ie
+LUT6                x006y055z4          0.046    f     1.860       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_449.relut6
+net (fo=1)                              0.000          1.860          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_454[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_215.muxi[0]
+F78MUX              x006y055            0.035    r     1.895          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_215.f8muxo
+net (fo=1)                              0.000          1.895          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_458,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_451.f78i
+                    x006y055z6          0.027    f     1.922          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_451.ofa
+net (fo=1)                              0.055          1.977          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[8]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[9]_syn_2.ic
+LUT3                x006y055z2          0.080    f     2.057       3  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[9]_syn_2.ofb
+net (fo=6)                              0.251          2.308          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[8],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[12]
+ERAM (reg)          x007y048            0.000    f     2.308       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.308               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          1.440               
+clock uncertainty                       0.050          1.490               
+clock pessimism                        -0.132          1.358               
+--------------------------------------------------------------------  ---------------
+Required                                               1.358               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.950               
+
+Slack               : 1.031ns
+Begin Point         : u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[11] (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 1.202ns (cell 0.297ns (24%), net 0.905ns (76%))
+Clock Skew          : 0.049ns
+Logic Level         : 4 ( LUT6=1  LUT3=1  LUT2=1  ERAM=1 )
+Max Fanout          : 96
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.143          0.947          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.025          0.972          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.226          1.198          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.clk
+launch edge                             0.000    r     1.198               
+--------------------------------------------------------------------  ---------------
+clk2q               x011y041z3          0.065    r     1.263          pin: u_hdmi_mixer/S_y_2d_reg[8]_syn_2.oqb
+net (fo=2)                              0.299          1.562          net: u_hdmi_mixer/S_x_1d[4],  ../../../user_source/hdl_source/hdmi_mixer.v(147)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ie
+LUT2                x004y052z6          0.052    f     1.614       1  pin: u_hdmi_mixer/u_anlogic_logo_rom/read_address_reg[5]_syn_2.ofb
+net (fo=96)                             0.151          1.765          net: u_hdmi_mixer/u_anlogic_logo_rom/I_addr[4],  ../../../user_source/hdl_source/anlogic_logo_palette.v(7)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_429.ie
+LUT6                x005y054z4          0.046    f     1.811       2  pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_429.relut6
+net (fo=1)                              0.000          1.811          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_434[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_192.muxi[0]
+F78MUX              x005y054            0.035    r     1.846          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_192.f8muxo
+net (fo=1)                              0.000          1.846          net: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_438,  ../../../user_source/hdl_source/anlogic_logo_palette.v(22)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_431.f78i
+                    x005y054z6          0.027    f     1.873          pin: u_hdmi_mixer/u_anlogic_logo_rom/mux0_syn_431.ofa
+net (fo=1)                              0.174          2.047          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[7]_syn_1[0],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[8]_syn_2.id
+LUT3                x006y055z1          0.072    f     2.119       3  pin: u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_alc_mc_top/u_axi_rx/app_addr_r2_reg[8]_syn_2.ofa
+net (fo=6)                              0.281          2.400          net: u_hdmi_mixer/u_anlogic_logo_rom/memory_address[7],  ../../../user_source/hdl_source/anlogic_logo_palette.v(11)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.addrb[11]
+ERAM (reg)          x007y048            0.000    f     2.400       4       
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.400               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.155          1.073          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkin
+SCLK                x023y059z1          0.030          1.103          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2.clkout
+net (fo=1404)                           0.276          1.379          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_1_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_hdmi_mixer/u_anlogic_logo_rom/PH1P_LOGIC_ERAM_Inst_second_high_syn_2.clkb
+capture edge                            0.000    r     1.379               
+--------------------------------------------------------------------  ---------------
+hold                                    0.072          1.451               
+clock uncertainty                       0.050          1.501               
+clock pessimism                        -0.132          1.369               
+--------------------------------------------------------------------  ---------------
+Required                                               1.369               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.031               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

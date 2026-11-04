@@ -1,0 +1,16 @@
+{
+  "associated_bit": "motion_can_probe_20261104_a820495a.bit",
+  "bit_identity_limit": "bit 身份按发布记录关联，非从板上读取",
+  "protocol_analysis": "analysis.json",
+  "source_sha256": "599274dfb3135d205238e19207f8624cab51ac26c9ada1c8c3997dcda5d2c725",
+  "verified_scope": "3次双轴初始化；16条绝对位置动作，含6条展示和10条零位；最终编码器及随后到位状态通过",
+  "last_zero": {
+    "axis1": 43,
+    "axis2": -7,
+    "tolerance_counts": 128,
+    "both_status": "3A 83 6B"
+  },
+  "root_cause": "探针版工作，旧版零帧的硬件根因仍未确认；本CSV无失败对照和外部波形",
+  "not_claimed": "机械固定/行程安全、冷启动、长期稳定及全部图像专项验收",
+  "capture_scope": "2074行以下才有效；按序号2074～3580处理，2073仅边界上下文"
+}

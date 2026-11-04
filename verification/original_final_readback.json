@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": {
+    "published_bit_sha256": true,
+    "original_working_bit_unchanged": true,
+    "user_csv_unchanged": true,
+    "copied_source_manifest": true,
+    "sha_sidecar_matches": true,
+    "guide_present": true
+  },
+  "bit_sha256": "5a5d32b2420552c769843064a71f010969ca903f5ed1a8d15eddaf47d1f8fb51"
+}

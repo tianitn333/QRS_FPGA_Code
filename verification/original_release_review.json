@@ -1,0 +1,399 @@
+{
+  "passed": true,
+  "pin_table_checked": true,
+  "new_can_paths_checked": true,
+  "strict_gate_limitation_acknowledged": true,
+  "routed_db_sha256": "2dc9156f1b80a4c5dadd20bc0cfde6f4e24835d9c6fd0eac14f5313ae6b3741c",
+  "source_scope": "source_scope.json",
+  "pin_table": {
+    "O_can_transmit": "P9",
+    "I_can_receive": "P8",
+    "I_motor_arm": "B4",
+    "I_motor_reference": "E11"
+  },
+  "asynchronous_receivers": {
+    "I_motor_arm": {
+      "single_first_stage_sink": true,
+      "expected_sink": "u_motor_arm_switch/S_sync_meta",
+      "matched_nets": [
+        "I_motor_arm_dup_1"
+      ]
+    },
+    "I_motor_reference": {
+      "single_first_stage_sink": true,
+      "expected_sink": "u_motor_reference_switch/S_sync_meta",
+      "matched_nets": [
+        "I_motor_reference_dup_1"
+      ]
+    },
+    "I_can_receive": {
+      "single_first_stage_sink": true,
+      "expected_sink": "S_can_receive_meta",
+      "matched_nets": [
+        "I_can_receive_dup_1"
+      ]
+    }
+  },
+  "new_can_paths": {
+    "command_20ms_gap": {
+      "Max": {
+        "slack_ns": 5.159,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.247,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "command_ready_gating": {
+      "Max": {
+        "slack_ns": 6.969,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.114,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "probe_fault_snapshot": {
+      "Max": {
+        "slack_ns": 3.188,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.073,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "probe_tx_edge_counter": {
+      "Max": {
+        "slack_ns": 7.592,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 45,
+        "paths": 45,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.087,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 45,
+        "paths": 45,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "probe_first_fault_lock": {
+      "Max": {
+        "slack_ns": 9.811,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 19,
+        "paths": 19,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.276,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "probe_status_readback": {
+      "Max": {
+        "slack_ns": 11.292,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 24,
+        "paths": 24,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.134,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 24,
+        "paths": 24,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "probe_frame_snapshot": {
+      "Max": {
+        "slack_ns": 0.713,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.073,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "can_host_phase": {
+      "Max": {
+        "slack_ns": 1.45,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.129,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "can_bit_time_prescaler": {
+      "Max": {
+        "slack_ns": 8.765,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 8,
+        "paths": 8,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.179,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 8,
+        "paths": 8,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "motor_command_magnitude": {
+      "Max": {
+        "slack_ns": 4.324,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 33,
+        "paths": 33,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.106,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 25,
+        "paths": 25,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "motor_rank_target": {
+      "Max": {
+        "slack_ns": 4.324,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 28,
+        "paths": 28,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.142,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 20,
+        "paths": 20,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "motor_race_deduplication": {
+      "Max": {
+        "slack_ns": 3.225,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.064,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 64,
+        "paths": 64,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "motor_arm_second_stage": {
+      "Max": {
+        "slack_ns": 10.54,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 22,
+        "paths": 22,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.325,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 22,
+        "paths": 22,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "motor_reference_second_stage": {
+      "Max": {
+        "slack_ns": 11.412,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 22,
+        "paths": 22,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.207,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 22,
+        "paths": 22,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    },
+    "can_receive_second_stage": {
+      "Max": {
+        "slack_ns": 11.843,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 3,
+        "paths": 3,
+        "reported_groups": 1,
+        "empty_groups": 0
+      },
+      "Min": {
+        "slack_ns": 0.14,
+        "tns_ns": 0.0,
+        "violations": 0,
+        "endpoints": 3,
+        "paths": 3,
+        "reported_groups": 1,
+        "empty_groups": 0
+      }
+    }
+  },
+  "can_output": {
+    "Max": {
+      "slack_ns": 3.188,
+      "tns_ns": 0.0,
+      "violations": 0,
+      "endpoints": 1,
+      "paths": 1,
+      "reported_groups": 1,
+      "empty_groups": 0
+    },
+    "Min": {
+      "slack_ns": 2.177,
+      "tns_ns": 0.0,
+      "violations": 0,
+      "endpoints": 1,
+      "paths": 1,
+      "reported_groups": 1,
+      "empty_groups": 0
+    }
+  },
+  "independent_sta": {
+    "SWNS": 0.106,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "logo_eram_groups": 12,
+  "volatile_paths": "volatile_paths/verification.json",
+  "sd_outputs_verified_constant": {
+    "O_sd_clk": {
+      "value": 0,
+      "physical_doq_net": "x34y79_auto_gnd",
+      "passed": true
+    },
+    "O_sd_mosi": {
+      "value": 1,
+      "physical_doq_net": "u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_fiu_wrapper/rdata_08[16]",
+      "passed": true
+    },
+    "O_sd_cs_n": {
+      "value": 1,
+      "physical_doq_net": "u_ph1p35_324_ddr_wrapper/u_ddr2/ph1p_ddrmc_wrapper/ph1p_ddrmc_top/u_ddr_phy/u_ddrphy_top/u_ddrphy_fiu_wrapper/rdata_08[16]",
+      "passed": true
+    }
+  },
+  "diagnostic_logic_added": true,
+  "can_diagnostic_frames_added": false,
+  "screen_snapshot_integration_tests_passed": true,
+  "screen_preview_actual_hdl": true,
+  "existing_combinational_protocol_reset_retained": true,
+  "external_electrical_activity_not_measured": true,
+  "limitations": [
+    "Strict formatter/AST/style gates remain failed; original top-level port normalization is unsupported and legacy style findings remain. Native ModelSim and complete-source TD evidence are separately passed.",
+    "The governed SVG renderer is absent; WaveJSON/spec documents are preserved without claiming rendered SVG.",
+    "check_timing retains the inherited camera I2C divider clock, vendor DSP dangling mode pins, IO timing and shadowed-exception findings. New CAN output, receiver second stages, FIFO budgets, Logo and volatile register paths are explicitly checked.",
+    "Native asynchronous DRAM write-to-read C2Q is not tool-modeled; it is not counted as a passing empty path. Functional FIFO retention and board acceptance remain distinct.",
+    "No board programming or electrical/mechanical/long-run testing occurred. Software STOP is not an independent hardware emergency stop."
+  ],
+  "board_programmed": false,
+  "board_tested": false
+}

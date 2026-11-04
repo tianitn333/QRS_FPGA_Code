@@ -1,0 +1,51 @@
+
+set_pin_assignment	{ I_sys_clk }			{ LOCATION = C4; IOSTANDARD  = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_rst_n }				{ LOCATION = R10; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+set_pin_assignment	{ O_cam_scl }		{ LOCATION = K3; IOSTANDARD  = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ IO_cam_sda }		{ LOCATION = J3; IOSTANDARD  = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ O_cam_24m }	{ LOCATION = L3; IOSTANDARD  = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ O_cam_rst }		{ LOCATION = L2; IOSTANDARD  = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+
+set_pin_assignment	{ I_button[0] }			{ LOCATION = N2;  IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_button[1] }			{ LOCATION = J14; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+
+# 板载按键（2026-10 新增，用于运行期模式切换）
+#   I_key[0] = D5（丝印 KEY1）：四模式循环 原图 → 灰度 → 边缘 → 色块
+#   I_key[1] = A9（丝印 KEY2）：EDGE 下 DETECT/EXTRACT；编辑短按下一项、长按退出（COLOR 长按 K1 进入编辑）
+#   I_key[2] = B9（丝印 KEY3）：当前参数减 / 连发减
+#   I_key[3] = C7（丝印 KEY4）：当前参数加 / 连发加；GLOBAL 页 1.5s 恢复默认
+# 依据（官方资料）：2_Example\8_key_sw\key_sw.adc 明确 key[0..3] = D5/A9/B9/C7；
+#   2_Example\32_cs500_mipi_hdmi\pin\pin.adc 同为 key[0]/I_button[0]=D5、key[1]/I_button[1]=A9；
+#   新 HX1P35A 开发板手册（HDL 版 2604）第 23 页 KEY1/2/3/4 = D5/A9/B9/C7。
+#   （原方案选用的 E5 存疑：官方 8_key_sw 例程把 E5 当 led[7] 用，为稳妥改用 A9。）
+# 低有效机械按键 → 内部上拉，按下为低
+# 注意：input 方向的 LVCMOS33 不支持 DRIVESTRENGTH（TD 报 USR-8409），故不写该项
+set_pin_assignment	{ I_key[0] }			{ LOCATION = D5;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_key[1] }			{ LOCATION = A9;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_key[2] }			{ LOCATION = B9;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_key[3] }			{ LOCATION = C7;  IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+# SDHC dedicated parameter card; only LBA2058..2061 is writable.
+set_pin_assignment { O_sd_clk } { LOCATION = A7; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+set_pin_assignment { O_sd_mosi } { LOCATION = A8; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; }
+set_pin_assignment { I_sd_miso } { LOCATION = E8; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { O_sd_cs_n } { LOCATION = B12; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ O_screen_pwm } 		{ LOCATION = R11; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLDOWN; }
+set_pin_assignment	{ O_tmds_ch0_p }		{ LOCATION = G16; IOSTANDARD = TMDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ O_tmds_ch1_p }		{ LOCATION = F17; IOSTANDARD = TMDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ O_tmds_ch2_p }		{ LOCATION = H14; IOSTANDARD = TMDS33; PULLTYPE = NONE; }
+set_pin_assignment	{ O_tmds_clk_p }		{ LOCATION = C17; IOSTANDARD = TMDS33; PULLTYPE = NONE; }
+
+
+
+# Physical SW1 -> SW_0/SW0 -> A4 (official cnt10.adc and HDL manual p21).
+# Up=1/HIT, down=0/RGB; applies only while editing, through 2FF + 20ms debounce.
+set_pin_assignment { I_switch_preview } { LOCATION = A4; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+
+# 本轮CAN：按原理图实际J2，27/28紧邻29=3.3V、30=GND。
+# GPIOB24=P9、GPIOB25=P8，BANK22=3.3V；保留原I_rst_n/R10契约不顺带改板级复位。
+set_pin_assignment { O_can_transmit } { LOCATION = P9; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment { I_can_receive } { LOCATION = P8; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { I_motor_arm } { LOCATION = B4; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN; }
+set_pin_assignment { I_motor_reference } { LOCATION = E11; IOSTANDARD = LVCMOS33; PULLTYPE = PULLDOWN; }

@@ -1,0 +1,35 @@
+{
+  "native_exit_code": 0,
+  "native_complete": true,
+  "protected_unchanged": true,
+  "original_bit_sha256": "a820495ad34971b212fa9deafc26fb23cd1e39b8c6790962fa7e1f16b947b9f3",
+  "original_db_sha256": "2dc9156f1b80a4c5dadd20bc0cfde6f4e24835d9c6fd0eac14f5313ae6b3741c",
+  "placement_route_rerun": false,
+  "rtl_modified": false,
+  "published": false,
+  "regenerated_original_matches": "pending separate bitgen; Date comment is excluded when comparing configuration",
+  "physical_exports": {
+    "csv": {
+      "present": true,
+      "equal": true,
+      "bytes": 2417727
+    },
+    "nets": {
+      "present": true,
+      "equal": true,
+      "bytes": 14609400
+    },
+    "pfb": {
+      "present": true,
+      "equal": true,
+      "bytes": 0
+    },
+    "bid": {
+      "present": true,
+      "equal": true,
+      "bytes": 145154
+    }
+  },
+  "only_expected_one_lut_netlist_change": true,
+  "hidden_db_sha256": "76c785d7dcb30372660a0373b8ff8463324fea42ffb4e3e656d72a76f845e109"
+}

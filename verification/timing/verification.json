@@ -1,0 +1,2137 @@
+{
+  "passed": true,
+  "native_exit_codes": {
+    "baseline": 0,
+    "budget": 0,
+    "logo": 0
+  },
+  "baseline_timing": {
+    "SWNS": 0.106,
+    "STNS": 0.0,
+    "HWNS": 0.02,
+    "HTNS": 0.0
+  },
+  "paths": {
+    "motion_cfg_req": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 16.051,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.178,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motion_cfg_ack": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 12.648,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.199,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motion_status_req": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 12.962,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motion_status_ack": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 16.006,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.195,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "hold_req": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 41.629,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "hold_ack": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 16.109,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.159,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "replay_req_receiver": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.315,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.199,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "replay_req_ack": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 12.962,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "replay_applied_receiver": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 12.676,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.194,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "replay_applied_ack": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.306,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.205,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "replay_control_receiver": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.531,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.133,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "replay_control_ack": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 16.297,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "read_valid_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 12.627,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.205,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "capture_fault_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.238,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.223,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "decision_fault_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.531,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.133,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_0_write_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.225,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_0_read_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 16.006,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_0_read_pointer_local": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 10.066,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 22,
+          "paths": 22,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.083,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 22,
+          "paths": 22,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_0_write_pointer_local": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 11.504,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 44,
+          "paths": 44,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.084,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 44,
+          "paths": 44,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_1_write_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.247,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_1_read_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 15.618,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.178,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_1_read_pointer_local": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 10.478,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.152,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_1_write_pointer_local": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 13.69,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 11,
+          "paths": 11,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.126,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 11,
+          "paths": 11,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_2_write_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.383,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_2_read_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 16.051,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.133,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_2_read_pointer_local": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 12.075,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 39,
+          "paths": 39,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.152,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 39,
+          "paths": 39,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_2_write_pointer_local": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.244,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 9,
+          "paths": 9,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.125,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 9,
+          "paths": 9,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_3_write_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.441,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.104,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_3_read_sync": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 15.906,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.195,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_3_read_pointer_local": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 11.378,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.154,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fifo_3_write_pointer_local": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.498,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 11,
+          "paths": 11,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.125,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 11,
+          "paths": 11,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "horizontal_capture_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 14.067,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 60,
+          "paths": 60,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.057,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 60,
+          "paths": 60,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "horizontal_front_history": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 8.409,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 54,
+          "paths": 54,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.08,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 51,
+          "paths": 51,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "horizontal_live_layout": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 0.178,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 30,
+          "paths": 30,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.279,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 30,
+          "paths": 30,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "horizontal_replay_layout": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 1.333,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.049,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "camera_orientation_sequence": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 36.821,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.082,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "restored_bggr_red_path": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 13.537,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 27,
+          "paths": 27,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.18,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 27,
+          "paths": 27,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "restored_bggr_blue_path": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 12.792,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 45,
+          "paths": 45,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.063,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 45,
+          "paths": 45,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fill_gap_eram_read": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.822,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 17,
+          "paths": 17,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.974,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 17,
+          "paths": 17,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fill_row_eram_read": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 8.261,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 65,
+          "paths": 65,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.783,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 65,
+          "paths": 65,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fill_capture_count": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 7.087,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.161,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fill_previous_row_eram_read": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 1.808,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 1.365,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fill_row_prefetch_hold": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 3.051,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 11,
+          "paths": 11,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.392,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 11,
+          "paths": 11,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fill_row_metadata_write_data": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 0.158,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.161,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fill_shared_metadata_write_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 6.912,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.101,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "fill_parent_eram_read": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 1.316,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 128,
+          "paths": 128,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.808,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 128,
+          "paths": 128,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "logo_registered_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 2.731,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.534,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "logo_prefetch_bank": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 6.13,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 25,
+          "paths": 25,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.212,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 25,
+          "paths": 25,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "logo_overlay_capture": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 11.967,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 24,
+          "paths": 24,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.071,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 24,
+          "paths": 24,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "can_host_phase": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 1.45,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.129,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "can_bit_time_prescaler": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 8.765,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 8,
+          "paths": 8,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.179,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 8,
+          "paths": 8,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motor_command_magnitude": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.324,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 33,
+          "paths": 33,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.106,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 25,
+          "paths": 25,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motor_rank_target": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.324,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 28,
+          "paths": 28,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.142,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 20,
+          "paths": 20,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motor_race_deduplication": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 3.225,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.064,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motor_arm_second_stage": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 10.54,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 22,
+          "paths": 22,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.325,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 22,
+          "paths": 22,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motor_reference_second_stage": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 11.412,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 22,
+          "paths": 22,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.207,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 22,
+          "paths": 22,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "can_receive_second_stage": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 11.843,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.14,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "command_20ms_gap": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 5.159,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.247,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "command_ready_gating": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 6.969,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.114,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "probe_fault_snapshot": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 3.188,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.073,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "probe_tx_edge_counter": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 7.592,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 45,
+          "paths": 45,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.087,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 45,
+          "paths": 45,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "probe_first_fault_lock": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 9.811,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 19,
+          "paths": 19,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.276,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "probe_status_readback": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 11.292,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 24,
+          "paths": 24,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.134,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 24,
+          "paths": 24,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "probe_frame_snapshot": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 0.713,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.073,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 64,
+          "paths": 64,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "motion_cfg_held_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 23.797,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 40,
+          "paths": 40,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "motion_status_held_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 23.786,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 48,
+          "paths": 48,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "replay_request_held_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 23.833,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "replay_applied_held_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 23.469,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 62,
+          "paths": 62,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "replay_control_held_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 23.474,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 55,
+          "paths": 55,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "fifo_0_write_gray_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.047,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "fifo_0_read_gray_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 3.993,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "fifo_1_write_gray_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 3.949,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "fifo_1_read_gray_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.322,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "fifo_2_write_gray_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.385,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "fifo_2_read_gray_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.329,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "fifo_3_write_gray_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.206,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "fifo_3_read_gray_budget": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.201,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 3,
+          "paths": 3,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.0,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 0,
+          "paths": 0,
+          "reported_groups": 1,
+          "empty_groups": 1
+        }
+      }
+    },
+    "baseline_summary": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 0.106,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 39270,
+          "paths": 10158283,
+          "reported_groups": 28,
+          "empty_groups": 6
+        },
+        "Min": {
+          "slack_ns": 0.02,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 39269,
+          "paths": 10158283,
+          "reported_groups": 28,
+          "empty_groups": 6
+        }
+      }
+    },
+    "can_gpio_output": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 3.188,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 2.177,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 1,
+          "paths": 1,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "changed_display": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 0.416,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 24,
+          "paths": 24,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.497,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 24,
+          "paths": 24,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "first_low_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.658,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.745,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "first_low_data": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 8.14,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.882,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "first_high_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.253,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.861,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "first_high_data": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.9,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 25,
+          "paths": 25,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 1.574,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "second_low_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.493,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.776,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "second_low_data": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 8.444,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.818,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "second_high_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.47,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.71,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "second_high_data": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.763,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 25,
+          "paths": 25,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 1.564,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "third_low_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.593,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.708,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "third_low_data": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 8.283,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.84,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "third_high_address": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 4.373,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 0.772,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 10,
+          "paths": 10,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    },
+    "third_high_data": {
+      "passed": true,
+      "summary": {
+        "Max": {
+          "slack_ns": 5.233,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 25,
+          "paths": 25,
+          "reported_groups": 1,
+          "empty_groups": 0
+        },
+        "Min": {
+          "slack_ns": 1.546,
+          "tns_ns": 0.0,
+          "violations": 0,
+          "endpoints": 18,
+          "paths": 18,
+          "reported_groups": 1,
+          "empty_groups": 0
+        }
+      }
+    }
+  },
+  "protected_unchanged": true,
+  "routed_db_sha256": "76c785d7dcb30372660a0373b8ff8463324fea42ffb4e3e656d72a76f845e109",
+  "source_full_synthesis_route": "unchanged source-built physical design inherited; display-only post-route LUT edit, no synthesis or P&R rerun",
+  "baseline_report_archive": "verification/timing/baseline_summary.timing.zip",
+  "baseline_report_archive_sha256": "f5380fdc6d887115504f48664f2f4fffbd924f2726732c3b7a2d85cf65ededb3"
+}

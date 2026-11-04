@@ -1,0 +1,2311 @@
+{
+  "cases": {
+    "tb_edge_fill_min_bg_run": {
+      "inputs": [
+        {
+          "path": "sim/inputs/dac036bc0831_ph1p_eram_sim.v",
+          "sha256": "dac036bc08316345fb88bd88885133df435026488d0fbe9e60d329d4fc382ed5"
+        },
+        {
+          "path": "sim/inputs/77cf755da3ef_tb_edge_fill_min_bg_run.v",
+          "sha256": "77cf755da3ef2986d5f6270036284b672aae6a436dc025d1767084579e04e3f8"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_color_stable": {
+      "inputs": [
+        {
+          "path": "sim/inputs/dac036bc0831_ph1p_eram_sim.v",
+          "sha256": "dac036bc08316345fb88bd88885133df435026488d0fbe9e60d329d4fc382ed5"
+        },
+        {
+          "path": "sim/inputs/cceb116fcaa5_tb_edge_fill_color_stable.v",
+          "sha256": "cceb116fcaa5fb7c3b30156f949ff3b32c803197f7b7fcc89677e1c8a2de43e5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_ccl_gap_count": {
+      "inputs": [
+        {
+          "path": "sim/inputs/dac036bc0831_ph1p_eram_sim.v",
+          "sha256": "dac036bc08316345fb88bd88885133df435026488d0fbe9e60d329d4fc382ed5"
+        },
+        {
+          "path": "sim/inputs/d8cdbc711165_tb_edge_fill_ccl_gap_count.v",
+          "sha256": "d8cdbc71116583c6197558387c9a7479469a07416bdab2032bfdba7357108d37"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_stream": {
+      "inputs": [
+        {
+          "path": "sim/inputs/dac036bc0831_ph1p_eram_sim.v",
+          "sha256": "dac036bc08316345fb88bd88885133df435026488d0fbe9e60d329d4fc382ed5"
+        },
+        {
+          "path": "sim/inputs/9a623c8bcf9a_tb_edge_fill_stream.v",
+          "sha256": "3a427621531aa7018ebf25aad5ef9ef85eae9fa359377b60c0f2e1541c96df76"
+        },
+        {
+          "path": "sim/inputs/1cb398534b42_counts.hex",
+          "sha256": "1cb398534b42187018940f5f05d2a09bc30cda568b8350da33aa62af9790b03d"
+        },
+        {
+          "path": "sim/inputs/335924f8c104_expected.hex",
+          "sha256": "335924f8c1045734443d8f388874f7f460eec3f8806d8e7a49a6fb0dd8daf503"
+        },
+        {
+          "path": "sim/inputs/1e1fa89a31b4_input.hex",
+          "sha256": "1e1fa89a31b40f827c1471daa0103cdfcf7988b274dd1a301be0bc81b072ed8a"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_random": {
+      "inputs": [
+        {
+          "path": "sim/inputs/dac036bc0831_ph1p_eram_sim.v",
+          "sha256": "dac036bc08316345fb88bd88885133df435026488d0fbe9e60d329d4fc382ed5"
+        },
+        {
+          "path": "sim/inputs/0be04936b98a_tb_edge_fill_random.v",
+          "sha256": "ba04f4dccdadb3b5cba6ef1820d9c616e806f2e8d9da773fe81ea36eaa346b59"
+        },
+        {
+          "path": "sim/inputs/9a623c8bcf9a_tb_edge_fill_stream.v",
+          "sha256": "3a427621531aa7018ebf25aad5ef9ef85eae9fa359377b60c0f2e1541c96df76"
+        },
+        {
+          "path": "sim/inputs/956a11a45f28_counts.hex",
+          "sha256": "956a11a45f28ff5ea267cd78070b315d5c0937458c6151e4ba84de991d59498a"
+        },
+        {
+          "path": "sim/inputs/3c6092bd3794_expected.hex",
+          "sha256": "3c6092bd3794c6fe2ae5963fdd39c3e1ad1b6064ff29f57e34fbef45b3a63f86"
+        },
+        {
+          "path": "sim/inputs/1111c028edee_input.hex",
+          "sha256": "1111c028edee3d2946ba20238d87ff3af5a2e1d0dfcabeac02d59470e5d94058"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_capacity": {
+      "inputs": [
+        {
+          "path": "sim/inputs/dac036bc0831_ph1p_eram_sim.v",
+          "sha256": "dac036bc08316345fb88bd88885133df435026488d0fbe9e60d329d4fc382ed5"
+        },
+        {
+          "path": "sim/inputs/7dd8b9b2a136_tb_edge_fill_capacity.v",
+          "sha256": "8c6374110f2783cb8d90ec0c9221ece0fc4e4a463a82a25cf51047738fae6d0b"
+        },
+        {
+          "path": "sim/inputs/9a623c8bcf9a_tb_edge_fill_stream.v",
+          "sha256": "3a427621531aa7018ebf25aad5ef9ef85eae9fa359377b60c0f2e1541c96df76"
+        },
+        {
+          "path": "sim/inputs/c7f4864e27eb_counts.hex",
+          "sha256": "c7f4864e27ebe598807ddcfdcdca85ec8b2d6e7cb205d85bf4e28ec0c8e682dc"
+        },
+        {
+          "path": "sim/inputs/1b1100923f24_expected.hex",
+          "sha256": "1b1100923f2438b4d00c2ee28d7ecf2623bb428f3d8c24900761684643736b4c"
+        },
+        {
+          "path": "sim/inputs/7261561338c3_input.hex",
+          "sha256": "7261561338c34cc30b9ef3882a1eba604f61faef0ef3a330b2f29142025565d1"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_full720": {
+      "inputs": [
+        {
+          "path": "sim/inputs/dac036bc0831_ph1p_eram_sim.v",
+          "sha256": "dac036bc08316345fb88bd88885133df435026488d0fbe9e60d329d4fc382ed5"
+        },
+        {
+          "path": "sim/inputs/9a623c8bcf9a_tb_edge_fill_stream.v",
+          "sha256": "3a427621531aa7018ebf25aad5ef9ef85eae9fa359377b60c0f2e1541c96df76"
+        },
+        {
+          "path": "sim/inputs/eac17b0046de_counts.hex",
+          "sha256": "eac17b0046defe0c8a004d217bcb448e3c8d626aa15cd1a7023c8d227590faa9"
+        },
+        {
+          "path": "sim/inputs/2a9c1e01c2ee_expected.hex",
+          "sha256": "2a9c1e01c2eef2891d75f5a8a16c6e9860e545a467f2daa93dee7ea49c846bab"
+        },
+        {
+          "path": "sim/inputs/77041a8b7eae_input.hex",
+          "sha256": "77041a8b7eae86ea325a0df4d136beac602b65abc96706a0546acba39994d78a"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_timeout": {
+      "inputs": [
+        {
+          "path": "sim/inputs/dac036bc0831_ph1p_eram_sim.v",
+          "sha256": "dac036bc08316345fb88bd88885133df435026488d0fbe9e60d329d4fc382ed5"
+        },
+        {
+          "path": "sim/inputs/bc0beeec00f6_tb_edge_fill_timeout.v",
+          "sha256": "bc0beeec00f6ae191f7893015a7b6d1e52860093a2952663bdc31eef37d6c2f1"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_fill_storage_equivalence": {
+      "inputs": [
+        {
+          "path": "sim/inputs/8da47f1de867_ph1p_eram_sim.v",
+          "sha256": "8da47f1de867db638b545d04d492ec5442a9a1169b062d4cb829105d297274fd"
+        },
+        {
+          "path": "sim/inputs/22b275892811_reference_fill.v",
+          "sha256": "22b275892811b1f8a0b85a19159b2db59b5d0b040ed4e7a5e71b7627926dbceb"
+        },
+        {
+          "path": "sim/inputs/ea5a3847c405_tb_fill_storage_equivalence.v",
+          "sha256": "ea5a3847c4052ff3afae43504129a142c97f5e3a1b0040609fdc64809b4c8902"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_fill_storage_gaps": {
+      "inputs": [
+        {
+          "path": "sim/inputs/8da47f1de867_ph1p_eram_sim.v",
+          "sha256": "8da47f1de867db638b545d04d492ec5442a9a1169b062d4cb829105d297274fd"
+        },
+        {
+          "path": "sim/inputs/22b275892811_reference_fill.v",
+          "sha256": "22b275892811b1f8a0b85a19159b2db59b5d0b040ed4e7a5e71b7627926dbceb"
+        },
+        {
+          "path": "sim/inputs/5671ab8b72c6_tb_fill_storage_gaps.v",
+          "sha256": "5671ab8b72c6756bcaf9add8c0b68d75bec761222dab826aa74fd6838ba6e006"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_ccl_packed_abort": {
+      "inputs": [
+        {
+          "path": "sim/inputs/8da47f1de867_ph1p_eram_sim.v",
+          "sha256": "8da47f1de867db638b545d04d492ec5442a9a1169b062d4cb829105d297274fd"
+        },
+        {
+          "path": "sim/inputs/07362c6c5f8a_reference_ccl_abort.v",
+          "sha256": "07362c6c5f8a2836a39e59513cbd4b998c4b521c7c1805256e382fef1f6d2c6e"
+        },
+        {
+          "path": "sim/inputs/4242a9271175_tb_ccl_packed_abort.v",
+          "sha256": "4242a9271175df570b6a70c3b70dacabe187fd0070a92f28c81feeea46011d3f"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_bayer_phase_color": {
+      "inputs": [
+        {
+          "path": "sim/inputs/e93b4ae35fd8_tb_bayer_phase_color.v",
+          "sha256": "e93b4ae35fd8b7f521dcc5153efa2547d6a25ae8a4f45e62e5895701b0f6c1c6"
+        },
+        {
+          "path": "project/user_source/hdl_source/isp/demosaic_4x_2_0/bilinear_interpolation.v",
+          "sha256": "11ff09d716a4df50a62c90d7996f9173570597767630124cf1770f6973a623e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/uics500_cfg/uics500reg_720p60.v",
+          "sha256": "f7d6011cfdde878ef723dd531b3842832415df79b169621d2918616663c63c59"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_camera_orientation_startup": {
+      "inputs": [
+        {
+          "path": "sim/inputs/b4b9bf392b15_tb_camera_orientation_startup.v",
+          "sha256": "b4b9bf392b15c7e3388b287a5e53fb87c1993e5ff049471e600cb926f9789c70"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_divider.v",
+          "sha256": "8927b7bb0d725a55e1c6446bd3d131075c609f9a2018343b431b47dcf6ec7b0c"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_mailbox.v",
+          "sha256": "1189daeb607baf77e730d2c91827bc7083cf17576a741196f53fd2153506cee5"
+        },
+        {
+          "path": "project/user_source/hdl_source/auto_exposure.v",
+          "sha256": "d1f1b7fd04876be3c3d0cae897d6516683382e5b46d2aed7c05aaabfc144b4f3"
+        },
+        {
+          "path": "project/user_source/hdl_source/uics500_cfg/SC500GainTbl.v",
+          "sha256": "68b3acc049a9aa21b63560879ea6dc64f89938e5abe930f200cfd0373219abbe"
+        },
+        {
+          "path": "project/user_source/hdl_source/uics500_cfg/uicfgcs500_720p.v",
+          "sha256": "a05d37dc370c4e9235cc0e5505a621ae1b53f3a61ddf9bc1d2c413c6a818e68c"
+        },
+        {
+          "path": "project/user_source/hdl_source/uics500_cfg/uics500reg_720p60.v",
+          "sha256": "f7d6011cfdde878ef723dd531b3842832415df79b169621d2918616663c63c59"
+        },
+        {
+          "path": "project/user_source/hdl_source/uics500_cfg/uii2c.v",
+          "sha256": "4fa750594552ff5c1c3811b014ea80480f416190c838a4b85315c6b18f3c1d55"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motion_roundtrip": {
+      "inputs": [
+        {
+          "path": "sim/inputs/4c39d108e327_tb_motion_roundtrip.v",
+          "sha256": "4c39d108e32735aa9c0da8f798f5a764e7c70df2846695cb896f792a13513dfe"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_mailbox.v",
+          "sha256": "1189daeb607baf77e730d2c91827bc7083cf17576a741196f53fd2153506cee5"
+        },
+        {
+          "path": "project/user_source/hdl_source/mc_to_user_interface.v",
+          "sha256": "dd9cce1d5e873cdbe77e1817af62fcf310b7ef7c0fe2c6313be3a091bb567a63"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_frame_capture.v",
+          "sha256": "fb731496315517df9c638b913265d23cb1d6f4fafb6c28ff2fb09605fa773e26"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_frame_store_ctrl.v",
+          "sha256": "c38bc8294caf1878cc78ab4aa82d55fdd7062ca240961934670142650ed9723c"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_meta_fifo.v",
+          "sha256": "3313c15283e0d3f802d6793a062a06fad4e6b31fa03518d0689df97e4f8a4e55"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_video_out.v",
+          "sha256": "2e06e94d610433334509be72fa86c9acb94fcfd7c18e5667d9a62320533578fa"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_video_store.v",
+          "sha256": "aa1b3ee77363da6dc7dc067047f756953646f6e5ad17f76775e58f9e1640d75f"
+        },
+        {
+          "path": "project/user_source/hdl_source/vtc/uivtc.v",
+          "sha256": "e08ec1d71e957792ba063be84363e2c6e87d614bd36eda5991daf502eb3af70c"
+        },
+        {
+          "path": "project/user_source/ip_source/w128_d512_fifo/soft_fifo_al_4057d6b76aa6.v",
+          "sha256": "b22e673d85bbbf560614d725aa53e3df6cfbc78c45f65fffa2abe98c7e695997"
+        },
+        {
+          "path": "project/user_source/ip_source/w128_d512_fifo/w128_d512_fifo.v",
+          "sha256": "e2a8157a84b089020d300f7c135696230bb018d949a7cdca8e41e4342038808b"
+        },
+        {
+          "path": "project/user_source/ip_source/w155_d512_fifo/soft_fifo_al_f58e8b3e1f3d.v",
+          "sha256": "641e3e423ddbd8a9a2ccce2721f27e703a7ac2b9ea7b5312337a0925c3db527e"
+        },
+        {
+          "path": "project/user_source/ip_source/w155_d512_fifo/w155_d512_fifo.v",
+          "sha256": "b9306d0ca8d10fb029dbff514b01564cce1a47268b8e16881f87cd218388a239"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motion_slots": {
+      "inputs": [
+        {
+          "path": "sim/inputs/4c48e569f56d_tb_motion_slots.v",
+          "sha256": "4c48e569f56d0362297033cd8afdff0023238b5ad8ada52726d2a7b1bd6d17ba"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_frame_store_ctrl.v",
+          "sha256": "c38bc8294caf1878cc78ab4aa82d55fdd7062ca240961934670142650ed9723c"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motion_slots_stale": {
+      "inputs": [
+        {
+          "path": "sim/inputs/c13e49979a49_tb_motion_slots_stale.v",
+          "sha256": "c13e49979a490c99aa5c15a852b340908ca3135dd0593b48f438bccc6bdb7ee4"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_frame_store_ctrl.v",
+          "sha256": "c38bc8294caf1878cc78ab4aa82d55fdd7062ca240961934670142650ed9723c"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motion_slots_overlap": {
+      "inputs": [
+        {
+          "path": "sim/inputs/d7b80b8e3f92_tb_motion_slots_overlap.v",
+          "sha256": "d7b80b8e3f92140f3da174aa848864b92fe751000330daa15828c32e0c2bf570"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_frame_store_ctrl.v",
+          "sha256": "c38bc8294caf1878cc78ab4aa82d55fdd7062ca240961934670142650ed9723c"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motion_meta_fifo": {
+      "inputs": [
+        {
+          "path": "sim/inputs/f7dfffe6ed13_tb_motion_meta_fifo.v",
+          "sha256": "f7dfffe6ed13c2551da68870e2fe839794e86fa9b938343a30a6541b1c3ddfeb"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_meta_fifo.v",
+          "sha256": "3313c15283e0d3f802d6793a062a06fad4e6b31fa03518d0689df97e4f8a4e55"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motion_replay_ui": {
+      "inputs": [
+        {
+          "path": "sim/inputs/b9ed8ac240c2_tb_motion_replay_ui.v",
+          "sha256": "b9ed8ac240c20178abee016da0ddb2eaa446948f62d5bd34ba901cd1b7653f73"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_replay_ui.v",
+          "sha256": "13017d51040e80ad6d2f75df080e61823012c8df76028b837c2f4af68e51df46"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_logo_palette_equiv": {
+      "inputs": [
+        {
+          "path": "sim/inputs/70d89b70bdd5_ph1p_logic_eram.v",
+          "sha256": "70d89b70bdd51812ad86b91e88526b4604ebb117516efda5af976fcddb2e69af"
+        },
+        {
+          "path": "sim/inputs/787312a19b40_ph1p_phy_gsr.v",
+          "sha256": "787312a19b4007bef3b76986bce267966b2d04c1871290ce29905629e38f1524"
+        },
+        {
+          "path": "sim/inputs/c6ab5760eedf_expected.hex",
+          "sha256": "c6ab5760eedf921fc1814c78c0db674478f6961c432d8b7601153ba33e900ccf"
+        },
+        {
+          "path": "sim/inputs/da4b5df34b2c_tb_logo_palette_equiv.v",
+          "sha256": "da4b5df34b2c1bcef77cad9ace97c3920b7b723bc4df13581d9d9e2f6d9838b6"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_palette.v",
+          "sha256": "36c5581b42ddeef4781da1151fa9b7fb8733e87da4ebb0e7098d8398eacca66c"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_rom.v",
+          "sha256": "8d0237433bae01cebbad2f085fb07a41db4dae6bb91cc5ae924ac70929d68619"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_0.dath",
+          "sha256": "06942260893b4b558babfa76f8ac1ffcc1df8388758e73248ad7d51490755db7"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_1.dath",
+          "sha256": "e7cbf9b82714eb38be42f4cb1cb5083fc9d994031a3a342f77438bde217d0576"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_0.dath",
+          "sha256": "a04a2ab5226ca4a3845115ca257b1774ec27155f328426d86d1d5a70bad0ce82"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_1.dath",
+          "sha256": "d0b602051ea4ffd8bf0440f5c1cc6aabcaf4125c402dc869e711fbbb13f1f1e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_0.dath",
+          "sha256": "b1c77158a400d035d0f05ad4df53fb158fec5d76f0c9a2dcab5a1043cb56c3be"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_1.dath",
+          "sha256": "a8a6abfd170e07739b4e7a3ab43461c50b7bfc07513f86aa5f97f9cc452fab3c"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_logo_mapped_pixels": {
+      "inputs": [
+        {
+          "path": "sim/inputs/02dfbc086468_al_map_adder.v",
+          "sha256": "02dfbc0864687bcba96cbed80c69dada2c511e24c89b0e4e308fed3ccc8ccf84"
+        },
+        {
+          "path": "sim/inputs/98ddbb673a95_al_map_alu2b.v",
+          "sha256": "98ddbb673a9550e5fc923dc22cd48d83cd5b5dc038f33a304b3228cc346f4135"
+        },
+        {
+          "path": "sim/inputs/ac0aa7f986fd_al_map_basic.v",
+          "sha256": "ac0aa7f986fdfba39fb7b361b26ace4ba1049807d6feccde09b2fa21eb0903da"
+        },
+        {
+          "path": "sim/inputs/a8af44de3610_al_map_lut.v",
+          "sha256": "a8af44de361088c0bb66a58d5af9b8eb5aa6e9b8ca56992d6164a9f689c488f0"
+        },
+        {
+          "path": "sim/inputs/588d8be94d67_al_map_mult.v",
+          "sha256": "588d8be94d67d00539bfe6b5ebab9e44d85d050cf7df7229a18682d67ec29465"
+        },
+        {
+          "path": "sim/inputs/f4877909a80a_al_map_mux4.v",
+          "sha256": "f4877909a80ac5fea5ef29cafca28443448d695f35ea3d0ac713676340b66a3c"
+        },
+        {
+          "path": "sim/inputs/484d26a861f1_al_map_seq.v",
+          "sha256": "484d26a861f1243ab949873529c45dc2d545571af47a348249fa7b01b1500c50"
+        },
+        {
+          "path": "sim/inputs/c194f5335b54_al_phy_glbl.v",
+          "sha256": "c194f5335b54a6d707a8b633b8f4d3a171e52006337600f7433379b11fb3b2ff"
+        },
+        {
+          "path": "sim/inputs/c1c2510f148e_ph1p_phy_config_v2.v",
+          "sha256": "c1c2510f148eebbbc5e994e339d18a3a129329b43b7d74960374b17c198a61cb"
+        },
+        {
+          "path": "sim/inputs/231c1d717574_ph1p_phy_eram_v2.v",
+          "sha256": "231c1d717574b308531666c6db18c27900e54ef1eb00faa8f253d2d07b1a905e"
+        },
+        {
+          "path": "sim/inputs/2c971f8d5d20_ph1p_phy_f78mux.v",
+          "sha256": "2c971f8d5d20247d4c34290a7d487db8d2da3e7f4f4afc5e45733d5f0a3e0ff8"
+        },
+        {
+          "path": "sim/inputs/787312a19b40_ph1p_phy_gsr.v",
+          "sha256": "787312a19b4007bef3b76986bce267966b2d04c1871290ce29905629e38f1524"
+        },
+        {
+          "path": "sim/inputs/99d5caf12fad_ph1p_phy_hd_pad.v",
+          "sha256": "99d5caf12fad27694aaf99270a6705ee6904ed27e5eccd20f2009e20ec4f9200"
+        },
+        {
+          "path": "sim/inputs/68bca4ef00e4_ph1p_phy_hr_pad_v2.v",
+          "sha256": "68bca4ef00e4fce9a0d956ba18c4ac864d6f22ba1f3bcedd46204974c156cc10"
+        },
+        {
+          "path": "sim/inputs/bf1b01f9b223_ph1p_phy_lslice.v",
+          "sha256": "bf1b01f9b22304fead0f4e75a777d27b7465019fe522f6c6ef0258d9fb358af2"
+        },
+        {
+          "path": "sim/inputs/7b645c675d63_mapped.v",
+          "sha256": "7b645c675d632d173d88a212605e10cf3fda6a9599c7fd99e3ace6cbe0e5c4ea"
+        },
+        {
+          "path": "sim/inputs/c6ab5760eedf_expected.hex",
+          "sha256": "c6ab5760eedf921fc1814c78c0db674478f6961c432d8b7601153ba33e900ccf"
+        },
+        {
+          "path": "sim/inputs/4f371d28ef41_tb_logo_mapped_pixels.v",
+          "sha256": "4f371d28ef41bf0b821d3923a88d73f0b88b075fa3f280337d34a2d5ed7a6560"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_rom.v",
+          "sha256": "8d0237433bae01cebbad2f085fb07a41db4dae6bb91cc5ae924ac70929d68619"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motion_horizontal_evidence": {
+      "inputs": [
+        {
+          "path": "sim/inputs/a04985d4f9c8_tb_motion_horizontal_evidence.v",
+          "sha256": "a04985d4f9c8f6b702df6b332d32e8ebb5ee74b62d2ba3a56c9b60cc28dcab47"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_mailbox.v",
+          "sha256": "1189daeb607baf77e730d2c91827bc7083cf17576a741196f53fd2153506cee5"
+        },
+        {
+          "path": "project/user_source/hdl_source/mc_to_user_interface.v",
+          "sha256": "dd9cce1d5e873cdbe77e1817af62fcf310b7ef7c0fe2c6313be3a091bb567a63"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_finish_trial.v",
+          "sha256": "7998f530bd3009d79abd3dbc209ffa9c39dfdc9c740f055869ba05b35f880998"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_frame_capture.v",
+          "sha256": "fb731496315517df9c638b913265d23cb1d6f4fafb6c28ff2fb09605fa773e26"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_frame_store_ctrl.v",
+          "sha256": "c38bc8294caf1878cc78ab4aa82d55fdd7062ca240961934670142650ed9723c"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_gray_ram.v",
+          "sha256": "cdf99d963d0c355cf33448c9b2c0b138bd1ef003c7d062d75cd3b383274542d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_meta_fifo.v",
+          "sha256": "3313c15283e0d3f802d6793a062a06fad4e6b31fa03518d0689df97e4f8a4e55"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_video_store.v",
+          "sha256": "aa1b3ee77363da6dc7dc067047f756953646f6e5ad17f76775e58f9e1640d75f"
+        },
+        {
+          "path": "project/user_source/ip_source/w128_d512_fifo/soft_fifo_al_4057d6b76aa6.v",
+          "sha256": "b22e673d85bbbf560614d725aa53e3df6cfbc78c45f65fffa2abe98c7e695997"
+        },
+        {
+          "path": "project/user_source/ip_source/w128_d512_fifo/w128_d512_fifo.v",
+          "sha256": "e2a8157a84b089020d300f7c135696230bb018d949a7cdca8e41e4342038808b"
+        },
+        {
+          "path": "project/user_source/ip_source/w155_d512_fifo/soft_fifo_al_f58e8b3e1f3d.v",
+          "sha256": "641e3e423ddbd8a9a2ccce2721f27e703a7ac2b9ea7b5312337a0925c3db527e"
+        },
+        {
+          "path": "project/user_source/ip_source/w155_d512_fifo/w155_d512_fifo.v",
+          "sha256": "b9306d0ca8d10fb029dbff514b01564cce1a47268b8e16881f87cd218388a239"
+        },
+        {
+          "path": "sim/inputs/8da47f1de867_ph1p_eram_sim.v",
+          "sha256": "8da47f1de867db638b545d04d492ec5442a9a1169b062d4cb829105d297274fd"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motion_unique": {
+      "inputs": [
+        {
+          "path": "sim/inputs/369da9ce3cdf_tb_motion_unique.v",
+          "sha256": "369da9ce3cdfedbab615394747daea83fda79b73018da9df6ed5ab137dbbfadd"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_motor_mailbox": {
+      "inputs": [
+        {
+          "path": "sim/inputs/207fe3d07d49_tb_motor_mailbox.v",
+          "sha256": "207fe3d07d4954146e1e03a0c4ec8544d2462537d5573a98dbfe7bcadba71f7c"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_mailbox.v",
+          "sha256": "1189daeb607baf77e730d2c91827bc7083cf17576a741196f53fd2153506cee5"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_race_motor_marker": {
+      "inputs": [
+        {
+          "path": "sim/inputs/19771d775095_tb_race_motor_marker.v",
+          "sha256": "19771d7750958f7ebaf5e49e5bbfc48fdf3650406e1739e3c108050004a34814"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_defines.v",
+          "sha256": "9f970ffb6f2b6b5ce67d450c50969265107b67604cf641334bac5bc5378bc745"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/timescale.v",
+          "sha256": "6a61cf8db88af470f457dadffcf627cd8f325a00fa3d8b239093520cf7fa94d8"
+        },
+        {
+          "path": "project/user_source/hdl_source/RaceMotorControl.v",
+          "sha256": "cf6e1a974b90e5a912615a6bfb24ed8f1081b0fa290f82b9c57b6b11f37eb23e"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_color_volatile": {
+      "inputs": [
+        {
+          "path": "project/user_source/hdl_source/color_param_bank.v",
+          "sha256": "7ffb5ebdc0a516346338d172b3b9085f6d30b9bc8a83f5225f920382687b2e40"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_codec.vh",
+          "sha256": "7c251d866e3c99c31503483ddec720426cdd13f794c7e344c0d5f6dc7591de5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_params.vh",
+          "sha256": "ee7ff289088cfd666e5b2df49fe6656a42119694500966920c894259fe0e5261"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_ui_fsm.v",
+          "sha256": "3c2e5458034957bb82df99a1f2b8975ac142b909e0d3726546a2f5b0c3afa536"
+        },
+        {
+          "path": "sim/inputs/e4982a975842_tb_color_volatile.v",
+          "sha256": "e4982a9758424a0eda251b828c9124cd1767a89e83abc6dad9c6619352415de6"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_color_red_volatile": {
+      "inputs": [
+        {
+          "path": "project/user_source/hdl_source/color_detect_box.v",
+          "sha256": "e1ebad5fad70c0a720dcd247855c7c7b8026707c9526db3ff40371afb31cb8d5"
+        },
+        {
+          "path": "sim/inputs/91d87bfa9664_tb_color_red_volatile.v",
+          "sha256": "91d87bfa966424c793d00c25460289cc299d3cfab0cf45ba4478d836024019d2"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_color_runtime_volatile": {
+      "inputs": [
+        {
+          "path": "project/user_source/hdl_source/color_detect_box.v",
+          "sha256": "e1ebad5fad70c0a720dcd247855c7c7b8026707c9526db3ff40371afb31cb8d5"
+        },
+        {
+          "path": "sim/inputs/801711b7c716_tb_color_runtime_volatile.v",
+          "sha256": "801711b7c7161c4136ebcd76ddcae20e548f3e64978bae69e8ceef681fbf36d7"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_keys": {
+      "inputs": [
+        {
+          "path": "sim/inputs/70d89b70bdd5_ph1p_logic_eram.v",
+          "sha256": "70d89b70bdd51812ad86b91e88526b4604ebb117516efda5af976fcddb2e69af"
+        },
+        {
+          "path": "sim/inputs/787312a19b40_ph1p_phy_gsr.v",
+          "sha256": "787312a19b4007bef3b76986bce267966b2d04c1871290ce29905629e38f1524"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_0.dath",
+          "sha256": "06942260893b4b558babfa76f8ac1ffcc1df8388758e73248ad7d51490755db7"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_1.dath",
+          "sha256": "e7cbf9b82714eb38be42f4cb1cb5083fc9d994031a3a342f77438bde217d0576"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_0.dath",
+          "sha256": "a04a2ab5226ca4a3845115ca257b1774ec27155f328426d86d1d5a70bad0ce82"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_1.dath",
+          "sha256": "d0b602051ea4ffd8bf0440f5c1cc6aabcaf4125c402dc869e711fbbb13f1f1e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_0.dath",
+          "sha256": "b1c77158a400d035d0f05ad4df53fb158fec5d76f0c9a2dcab5a1043cb56c3be"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_1.dath",
+          "sha256": "a8a6abfd170e07739b4e7a3ab43461c50b7bfc07513f86aa5f97f9cc452fab3c"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "sim/inputs/143bdf3777ad_color_detect_ae_reference.v",
+          "sha256": "143bdf3777ad38e6a6517155de2ff6a8fe7b58a10c8d40c2b6eec5309eaffc40"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_mailbox.v",
+          "sha256": "1189daeb607baf77e730d2c91827bc7083cf17576a741196f53fd2153506cee5"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_palette.v",
+          "sha256": "36c5581b42ddeef4781da1151fa9b7fb8733e87da4ebb0e7098d8398eacca66c"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_rom.v",
+          "sha256": "8d0237433bae01cebbad2f085fb07a41db4dae6bb91cc5ae924ac70929d68619"
+        },
+        {
+          "path": "project/user_source/hdl_source/background_status_osd.v",
+          "sha256": "ace0e4e1d7500005944759b9cd23c4f49115d5d57f82941171259abe3ffb0d45"
+        },
+        {
+          "path": "project/user_source/hdl_source/blue_background.v",
+          "sha256": "5d2e6cb5fdaaf49ed22cb4f1c91bd3df8a989f445afc71a79a65b18d2e080c7b"
+        },
+        {
+          "path": "project/user_source/hdl_source/calibration_key.v",
+          "sha256": "c52c0e8f0ba1f583c1c1d8fef77cdb1c07072170eb84f285ed869020d259492a"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_chroma_denoise.v",
+          "sha256": "aea247cfc50cb30abf9f55269097d492b8ce371c8c3308851a78a20e48acb3ae"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_detect_box.v",
+          "sha256": "e1ebad5fad70c0a720dcd247855c7c7b8026707c9526db3ff40371afb31cb8d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_key_ctrl.v",
+          "sha256": "a4b1deabb8ea11a8c8671bc71acc731669b32cd19983c4f57c35988425e010db"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_menu_osd.v",
+          "sha256": "89e4b77c62dc86b4a8c71ec71b4ac5fedda37e3cb85dde39faf67182ee0d3f45"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_bank.v",
+          "sha256": "7ffb5ebdc0a516346338d172b3b9085f6d30b9bc8a83f5225f920382687b2e40"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_codec.vh",
+          "sha256": "7c251d866e3c99c31503483ddec720426cdd13f794c7e344c0d5f6dc7591de5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_params.vh",
+          "sha256": "ee7ff289088cfd666e5b2df49fe6656a42119694500966920c894259fe0e5261"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_switch_ctrl.v",
+          "sha256": "afe53abb31691905829951cb4af628a8ff044c29d905b95ca26ddaf47d4b891c"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_ui_fsm.v",
+          "sha256": "3c2e5458034957bb82df99a1f2b8975ac142b909e0d3726546a2f5b0c3afa536"
+        },
+        {
+          "path": "project/user_source/hdl_source/detect_osd.v",
+          "sha256": "b60c99bd62e8ffbb2c95f49f9cc06f00e949d42e9375cd4b56b214b12f14fcd9"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_extract.v",
+          "sha256": "082166c15d8078d4a2b3abfeeab42b83bf12db859da230d56f02fe9f1af51b5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_refine.v",
+          "sha256": "ca5f78d20897e6ce49b8ee92c1ed6e888beb5067d0081d2fcb19f9ecc7d8d150"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_stats_osd.v",
+          "sha256": "5c27cf697eb49759c88099cde5003bafee04f5cd2808deabb9fed1016560e28d"
+        },
+        {
+          "path": "project/user_source/hdl_source/gray_gaussian3x3.v",
+          "sha256": "dd2849a9aa964ef1d287381d89d039040a94af120b640d2b2b54a6a763ce7eee"
+        },
+        {
+          "path": "project/user_source/hdl_source/hdmi_mixer.v",
+          "sha256": "c5228e078d937bf3a8aec4a3c81afa78e0ecacd1cfe895ce65dba97ddb750dbf"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_0.dath",
+          "sha256": "06942260893b4b558babfa76f8ac1ffcc1df8388758e73248ad7d51490755db7"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_1.dath",
+          "sha256": "e7cbf9b82714eb38be42f4cb1cb5083fc9d994031a3a342f77438bde217d0576"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_0.dath",
+          "sha256": "a04a2ab5226ca4a3845115ca257b1774ec27155f328426d86d1d5a70bad0ce82"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_1.dath",
+          "sha256": "d0b602051ea4ffd8bf0440f5c1cc6aabcaf4125c402dc869e711fbbb13f1f1e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_0.dath",
+          "sha256": "b1c77158a400d035d0f05ad4df53fb158fec5d76f0c9a2dcab5a1043cb56c3be"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_1.dath",
+          "sha256": "a8a6abfd170e07739b4e7a3ab43461c50b7bfc07513f86aa5f97f9cc452fab3c"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        },
+        {
+          "path": "project/user_source/hdl_source/pixel_gray_pipe.v",
+          "sha256": "9d39b14bb8e7ae2ca25db2185c63ec58f55dc36a46cfc600b29c403b41abe997"
+        },
+        {
+          "path": "project/user_source/hdl_source/sobel3x3.v",
+          "sha256": "84fe8161f74578ffb9cfbb8ab492d452968d695b4de6fa8788070205ecb5acbc"
+        },
+        {
+          "path": "project/user_source/hdl_source/status_osd.v",
+          "sha256": "5b9f62f218b4c20c48318c85ded6c800f927cf1b792c2c880d71e5dd5d6a0e94"
+        },
+        {
+          "path": "project/user_source/hdl_source/video_stream_delay.v",
+          "sha256": "8c3a3cc50fd9ddd9737fdf3e42a1969fcb858c599560d0cd668df00c29feff76"
+        },
+        {
+          "path": "project/user_source/hdl_source/vtc/uivtc.v",
+          "sha256": "e08ec1d71e957792ba063be84363e2c6e87d614bd36eda5991daf502eb3af70c"
+        },
+        {
+          "path": "sim/inputs/c3fa1326fe06_tb_edge_fill_keys.v",
+          "sha256": "c3fa1326fe062ee7dd0552dc48253cb5b8852ea3e8366e5cbaf30d9ae52fad3e"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_compare": {
+      "inputs": [
+        {
+          "path": "sim/inputs/70d89b70bdd5_ph1p_logic_eram.v",
+          "sha256": "70d89b70bdd51812ad86b91e88526b4604ebb117516efda5af976fcddb2e69af"
+        },
+        {
+          "path": "sim/inputs/787312a19b40_ph1p_phy_gsr.v",
+          "sha256": "787312a19b4007bef3b76986bce267966b2d04c1871290ce29905629e38f1524"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_0.dath",
+          "sha256": "06942260893b4b558babfa76f8ac1ffcc1df8388758e73248ad7d51490755db7"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_1.dath",
+          "sha256": "e7cbf9b82714eb38be42f4cb1cb5083fc9d994031a3a342f77438bde217d0576"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_0.dath",
+          "sha256": "a04a2ab5226ca4a3845115ca257b1774ec27155f328426d86d1d5a70bad0ce82"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_1.dath",
+          "sha256": "d0b602051ea4ffd8bf0440f5c1cc6aabcaf4125c402dc869e711fbbb13f1f1e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_0.dath",
+          "sha256": "b1c77158a400d035d0f05ad4df53fb158fec5d76f0c9a2dcab5a1043cb56c3be"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_1.dath",
+          "sha256": "a8a6abfd170e07739b4e7a3ab43461c50b7bfc07513f86aa5f97f9cc452fab3c"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "sim/inputs/143bdf3777ad_color_detect_ae_reference.v",
+          "sha256": "143bdf3777ad38e6a6517155de2ff6a8fe7b58a10c8d40c2b6eec5309eaffc40"
+        },
+        {
+          "path": "sim/inputs/421ba2fd4555_tb_edge_fill_compare.v",
+          "sha256": "a60dc793dd1b509ea00557111212a22804517774706d3567a98e378e575e94a2"
+        },
+        {
+          "path": "sim/inputs/510d63dbc5cc_fill.hex",
+          "sha256": "510d63dbc5cca40feb7ecb2b9529252a4db03c04c3df8f7cd58e5f1934ce4480"
+        },
+        {
+          "path": "sim/inputs/4043e9b5a8d0_detect.hex",
+          "sha256": "4043e9b5a8d0a6376c22b04655f2fcc70b589854896aa913a67428359317610d"
+        },
+        {
+          "path": "sim/inputs/016e5427329c_extract.hex",
+          "sha256": "016e5427329c86d9fb5d5bcf3988a713b65b68adef16eb18f06ee510b09cc4e9"
+        },
+        {
+          "path": "sim/inputs/f77e4622d9c3_gray.hex",
+          "sha256": "f77e4622d9c3e47b64dcd4dc64d9152eb082219ed0f1bb4c4f92080267b806ca"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_mailbox.v",
+          "sha256": "1189daeb607baf77e730d2c91827bc7083cf17576a741196f53fd2153506cee5"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_palette.v",
+          "sha256": "36c5581b42ddeef4781da1151fa9b7fb8733e87da4ebb0e7098d8398eacca66c"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_rom.v",
+          "sha256": "8d0237433bae01cebbad2f085fb07a41db4dae6bb91cc5ae924ac70929d68619"
+        },
+        {
+          "path": "project/user_source/hdl_source/background_status_osd.v",
+          "sha256": "ace0e4e1d7500005944759b9cd23c4f49115d5d57f82941171259abe3ffb0d45"
+        },
+        {
+          "path": "project/user_source/hdl_source/blue_background.v",
+          "sha256": "5d2e6cb5fdaaf49ed22cb4f1c91bd3df8a989f445afc71a79a65b18d2e080c7b"
+        },
+        {
+          "path": "project/user_source/hdl_source/calibration_key.v",
+          "sha256": "c52c0e8f0ba1f583c1c1d8fef77cdb1c07072170eb84f285ed869020d259492a"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_chroma_denoise.v",
+          "sha256": "aea247cfc50cb30abf9f55269097d492b8ce371c8c3308851a78a20e48acb3ae"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_detect_box.v",
+          "sha256": "e1ebad5fad70c0a720dcd247855c7c7b8026707c9526db3ff40371afb31cb8d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_key_ctrl.v",
+          "sha256": "a4b1deabb8ea11a8c8671bc71acc731669b32cd19983c4f57c35988425e010db"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_menu_osd.v",
+          "sha256": "89e4b77c62dc86b4a8c71ec71b4ac5fedda37e3cb85dde39faf67182ee0d3f45"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_bank.v",
+          "sha256": "7ffb5ebdc0a516346338d172b3b9085f6d30b9bc8a83f5225f920382687b2e40"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_codec.vh",
+          "sha256": "7c251d866e3c99c31503483ddec720426cdd13f794c7e344c0d5f6dc7591de5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_params.vh",
+          "sha256": "ee7ff289088cfd666e5b2df49fe6656a42119694500966920c894259fe0e5261"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_switch_ctrl.v",
+          "sha256": "afe53abb31691905829951cb4af628a8ff044c29d905b95ca26ddaf47d4b891c"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_ui_fsm.v",
+          "sha256": "3c2e5458034957bb82df99a1f2b8975ac142b909e0d3726546a2f5b0c3afa536"
+        },
+        {
+          "path": "project/user_source/hdl_source/detect_osd.v",
+          "sha256": "b60c99bd62e8ffbb2c95f49f9cc06f00e949d42e9375cd4b56b214b12f14fcd9"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_extract.v",
+          "sha256": "082166c15d8078d4a2b3abfeeab42b83bf12db859da230d56f02fe9f1af51b5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_refine.v",
+          "sha256": "ca5f78d20897e6ce49b8ee92c1ed6e888beb5067d0081d2fcb19f9ecc7d8d150"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_stats_osd.v",
+          "sha256": "5c27cf697eb49759c88099cde5003bafee04f5cd2808deabb9fed1016560e28d"
+        },
+        {
+          "path": "project/user_source/hdl_source/gray_gaussian3x3.v",
+          "sha256": "dd2849a9aa964ef1d287381d89d039040a94af120b640d2b2b54a6a763ce7eee"
+        },
+        {
+          "path": "project/user_source/hdl_source/hdmi_mixer.v",
+          "sha256": "c5228e078d937bf3a8aec4a3c81afa78e0ecacd1cfe895ce65dba97ddb750dbf"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_0.dath",
+          "sha256": "06942260893b4b558babfa76f8ac1ffcc1df8388758e73248ad7d51490755db7"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_1.dath",
+          "sha256": "e7cbf9b82714eb38be42f4cb1cb5083fc9d994031a3a342f77438bde217d0576"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_0.dath",
+          "sha256": "a04a2ab5226ca4a3845115ca257b1774ec27155f328426d86d1d5a70bad0ce82"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_1.dath",
+          "sha256": "d0b602051ea4ffd8bf0440f5c1cc6aabcaf4125c402dc869e711fbbb13f1f1e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_0.dath",
+          "sha256": "b1c77158a400d035d0f05ad4df53fb158fec5d76f0c9a2dcab5a1043cb56c3be"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_1.dath",
+          "sha256": "a8a6abfd170e07739b4e7a3ab43461c50b7bfc07513f86aa5f97f9cc452fab3c"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        },
+        {
+          "path": "project/user_source/hdl_source/pixel_gray_pipe.v",
+          "sha256": "9d39b14bb8e7ae2ca25db2185c63ec58f55dc36a46cfc600b29c403b41abe997"
+        },
+        {
+          "path": "project/user_source/hdl_source/sobel3x3.v",
+          "sha256": "84fe8161f74578ffb9cfbb8ab492d452968d695b4de6fa8788070205ecb5acbc"
+        },
+        {
+          "path": "project/user_source/hdl_source/status_osd.v",
+          "sha256": "5b9f62f218b4c20c48318c85ded6c800f927cf1b792c2c880d71e5dd5d6a0e94"
+        },
+        {
+          "path": "project/user_source/hdl_source/video_stream_delay.v",
+          "sha256": "8c3a3cc50fd9ddd9737fdf3e42a1969fcb858c599560d0cd668df00c29feff76"
+        },
+        {
+          "path": "project/user_source/hdl_source/vtc/uivtc.v",
+          "sha256": "e08ec1d71e957792ba063be84363e2c6e87d614bd36eda5991daf502eb3af70c"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_edge_fill_real_vtc": {
+      "inputs": [
+        {
+          "path": "sim/inputs/70d89b70bdd5_ph1p_logic_eram.v",
+          "sha256": "70d89b70bdd51812ad86b91e88526b4604ebb117516efda5af976fcddb2e69af"
+        },
+        {
+          "path": "sim/inputs/787312a19b40_ph1p_phy_gsr.v",
+          "sha256": "787312a19b4007bef3b76986bce267966b2d04c1871290ce29905629e38f1524"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_0.dath",
+          "sha256": "06942260893b4b558babfa76f8ac1ffcc1df8388758e73248ad7d51490755db7"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_1.dath",
+          "sha256": "e7cbf9b82714eb38be42f4cb1cb5083fc9d994031a3a342f77438bde217d0576"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_0.dath",
+          "sha256": "a04a2ab5226ca4a3845115ca257b1774ec27155f328426d86d1d5a70bad0ce82"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_1.dath",
+          "sha256": "d0b602051ea4ffd8bf0440f5c1cc6aabcaf4125c402dc869e711fbbb13f1f1e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_0.dath",
+          "sha256": "b1c77158a400d035d0f05ad4df53fb158fec5d76f0c9a2dcab5a1043cb56c3be"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_1.dath",
+          "sha256": "a8a6abfd170e07739b4e7a3ab43461c50b7bfc07513f86aa5f97f9cc452fab3c"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "sim/inputs/143bdf3777ad_color_detect_ae_reference.v",
+          "sha256": "143bdf3777ad38e6a6517155de2ff6a8fe7b58a10c8d40c2b6eec5309eaffc40"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_mailbox.v",
+          "sha256": "1189daeb607baf77e730d2c91827bc7083cf17576a741196f53fd2153506cee5"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_palette.v",
+          "sha256": "36c5581b42ddeef4781da1151fa9b7fb8733e87da4ebb0e7098d8398eacca66c"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_rom.v",
+          "sha256": "8d0237433bae01cebbad2f085fb07a41db4dae6bb91cc5ae924ac70929d68619"
+        },
+        {
+          "path": "project/user_source/hdl_source/background_status_osd.v",
+          "sha256": "ace0e4e1d7500005944759b9cd23c4f49115d5d57f82941171259abe3ffb0d45"
+        },
+        {
+          "path": "project/user_source/hdl_source/blue_background.v",
+          "sha256": "5d2e6cb5fdaaf49ed22cb4f1c91bd3df8a989f445afc71a79a65b18d2e080c7b"
+        },
+        {
+          "path": "project/user_source/hdl_source/calibration_key.v",
+          "sha256": "c52c0e8f0ba1f583c1c1d8fef77cdb1c07072170eb84f285ed869020d259492a"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_chroma_denoise.v",
+          "sha256": "aea247cfc50cb30abf9f55269097d492b8ce371c8c3308851a78a20e48acb3ae"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_detect_box.v",
+          "sha256": "e1ebad5fad70c0a720dcd247855c7c7b8026707c9526db3ff40371afb31cb8d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_key_ctrl.v",
+          "sha256": "a4b1deabb8ea11a8c8671bc71acc731669b32cd19983c4f57c35988425e010db"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_menu_osd.v",
+          "sha256": "89e4b77c62dc86b4a8c71ec71b4ac5fedda37e3cb85dde39faf67182ee0d3f45"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_bank.v",
+          "sha256": "7ffb5ebdc0a516346338d172b3b9085f6d30b9bc8a83f5225f920382687b2e40"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_codec.vh",
+          "sha256": "7c251d866e3c99c31503483ddec720426cdd13f794c7e344c0d5f6dc7591de5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_params.vh",
+          "sha256": "ee7ff289088cfd666e5b2df49fe6656a42119694500966920c894259fe0e5261"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_switch_ctrl.v",
+          "sha256": "afe53abb31691905829951cb4af628a8ff044c29d905b95ca26ddaf47d4b891c"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_ui_fsm.v",
+          "sha256": "3c2e5458034957bb82df99a1f2b8975ac142b909e0d3726546a2f5b0c3afa536"
+        },
+        {
+          "path": "project/user_source/hdl_source/detect_osd.v",
+          "sha256": "b60c99bd62e8ffbb2c95f49f9cc06f00e949d42e9375cd4b56b214b12f14fcd9"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_extract.v",
+          "sha256": "082166c15d8078d4a2b3abfeeab42b83bf12db859da230d56f02fe9f1af51b5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_refine.v",
+          "sha256": "ca5f78d20897e6ce49b8ee92c1ed6e888beb5067d0081d2fcb19f9ecc7d8d150"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_stats_osd.v",
+          "sha256": "5c27cf697eb49759c88099cde5003bafee04f5cd2808deabb9fed1016560e28d"
+        },
+        {
+          "path": "project/user_source/hdl_source/gray_gaussian3x3.v",
+          "sha256": "dd2849a9aa964ef1d287381d89d039040a94af120b640d2b2b54a6a763ce7eee"
+        },
+        {
+          "path": "project/user_source/hdl_source/hdmi_mixer.v",
+          "sha256": "c5228e078d937bf3a8aec4a3c81afa78e0ecacd1cfe895ce65dba97ddb750dbf"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_0.dath",
+          "sha256": "06942260893b4b558babfa76f8ac1ffcc1df8388758e73248ad7d51490755db7"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_1.dath",
+          "sha256": "e7cbf9b82714eb38be42f4cb1cb5083fc9d994031a3a342f77438bde217d0576"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_0.dath",
+          "sha256": "a04a2ab5226ca4a3845115ca257b1774ec27155f328426d86d1d5a70bad0ce82"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_1.dath",
+          "sha256": "d0b602051ea4ffd8bf0440f5c1cc6aabcaf4125c402dc869e711fbbb13f1f1e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_0.dath",
+          "sha256": "b1c77158a400d035d0f05ad4df53fb158fec5d76f0c9a2dcab5a1043cb56c3be"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_1.dath",
+          "sha256": "a8a6abfd170e07739b4e7a3ab43461c50b7bfc07513f86aa5f97f9cc452fab3c"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        },
+        {
+          "path": "project/user_source/hdl_source/pixel_gray_pipe.v",
+          "sha256": "9d39b14bb8e7ae2ca25db2185c63ec58f55dc36a46cfc600b29c403b41abe997"
+        },
+        {
+          "path": "project/user_source/hdl_source/sobel3x3.v",
+          "sha256": "84fe8161f74578ffb9cfbb8ab492d452968d695b4de6fa8788070205ecb5acbc"
+        },
+        {
+          "path": "project/user_source/hdl_source/status_osd.v",
+          "sha256": "5b9f62f218b4c20c48318c85ded6c800f927cf1b792c2c880d71e5dd5d6a0e94"
+        },
+        {
+          "path": "project/user_source/hdl_source/video_stream_delay.v",
+          "sha256": "8c3a3cc50fd9ddd9737fdf3e42a1969fcb858c599560d0cd668df00c29feff76"
+        },
+        {
+          "path": "project/user_source/hdl_source/vtc/uivtc.v",
+          "sha256": "e08ec1d71e957792ba063be84363e2c6e87d614bd36eda5991daf502eb3af70c"
+        },
+        {
+          "path": "sim/inputs/6f66fbaedf3a_tb_edge_fill_real_vtc.v",
+          "sha256": "6f66fbaedf3ab7e5a534802602bfd846aeee095f95c287dcef9c7a9eb5d6f336"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_dark_blue_only": {
+      "inputs": [
+        {
+          "path": "sim/inputs/b6f46e90b19d_tb_dark_blue_only.v",
+          "sha256": "3869657ab09d581dcff63dbc7a434194e2442fd4ce81846faf7b452bf570bf52"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_detect_box.v",
+          "sha256": "e1ebad5fad70c0a720dcd247855c7c7b8026707c9526db3ff40371afb31cb8d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_params.vh",
+          "sha256": "ee7ff289088cfd666e5b2df49fe6656a42119694500966920c894259fe0e5261"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_logo_mixer_phase": {
+      "inputs": [
+        {
+          "path": "sim/inputs/70d89b70bdd5_ph1p_logic_eram.v",
+          "sha256": "70d89b70bdd51812ad86b91e88526b4604ebb117516efda5af976fcddb2e69af"
+        },
+        {
+          "path": "sim/inputs/787312a19b40_ph1p_phy_gsr.v",
+          "sha256": "787312a19b4007bef3b76986bce267966b2d04c1871290ce29905629e38f1524"
+        },
+        {
+          "path": "sim/inputs/ede4e9398e98_tb_logo_mixer_phase.v",
+          "sha256": "ede4e9398e98cc11a535b06ee209d2a3ebf91e9aa8916c769c61a0a7c28d9464"
+        },
+        {
+          "path": "project/user_source/hdl_source/ae_mailbox.v",
+          "sha256": "1189daeb607baf77e730d2c91827bc7083cf17576a741196f53fd2153506cee5"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_palette.v",
+          "sha256": "36c5581b42ddeef4781da1151fa9b7fb8733e87da4ebb0e7098d8398eacca66c"
+        },
+        {
+          "path": "project/user_source/hdl_source/anlogic_logo_rom.v",
+          "sha256": "8d0237433bae01cebbad2f085fb07a41db4dae6bb91cc5ae924ac70929d68619"
+        },
+        {
+          "path": "project/user_source/hdl_source/background_status_osd.v",
+          "sha256": "ace0e4e1d7500005944759b9cd23c4f49115d5d57f82941171259abe3ffb0d45"
+        },
+        {
+          "path": "project/user_source/hdl_source/blue_background.v",
+          "sha256": "5d2e6cb5fdaaf49ed22cb4f1c91bd3df8a989f445afc71a79a65b18d2e080c7b"
+        },
+        {
+          "path": "project/user_source/hdl_source/calibration_key.v",
+          "sha256": "c52c0e8f0ba1f583c1c1d8fef77cdb1c07072170eb84f285ed869020d259492a"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_chroma_denoise.v",
+          "sha256": "aea247cfc50cb30abf9f55269097d492b8ce371c8c3308851a78a20e48acb3ae"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_detect_box.v",
+          "sha256": "e1ebad5fad70c0a720dcd247855c7c7b8026707c9526db3ff40371afb31cb8d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_bank.v",
+          "sha256": "7ffb5ebdc0a516346338d172b3b9085f6d30b9bc8a83f5225f920382687b2e40"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_param_codec.vh",
+          "sha256": "7c251d866e3c99c31503483ddec720426cdd13f794c7e344c0d5f6dc7591de5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_params.vh",
+          "sha256": "ee7ff289088cfd666e5b2df49fe6656a42119694500966920c894259fe0e5261"
+        },
+        {
+          "path": "project/user_source/hdl_source/detect_osd.v",
+          "sha256": "b60c99bd62e8ffbb2c95f49f9cc06f00e949d42e9375cd4b56b214b12f14fcd9"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_extract.v",
+          "sha256": "082166c15d8078d4a2b3abfeeab42b83bf12db859da230d56f02fe9f1af51b5b"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_buffer.v",
+          "sha256": "81466cb14215e93d3366d0bebac6eb0ce0e72cfb22acc507e4bb14c7e5105ace"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ccl.v",
+          "sha256": "ea3d0decc6f3245ee1b98fa170fe7c6c015c8908dde2d7b0de16cf3d35c282a5"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_fill_ram24.v",
+          "sha256": "f0ed1266f8106a4e541ed6c6779eea70a008a562dd09a803fe20053f318f514b"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_refine.v",
+          "sha256": "ca5f78d20897e6ce49b8ee92c1ed6e888beb5067d0081d2fcb19f9ecc7d8d150"
+        },
+        {
+          "path": "project/user_source/hdl_source/edge_stats_osd.v",
+          "sha256": "5c27cf697eb49759c88099cde5003bafee04f5cd2808deabb9fed1016560e28d"
+        },
+        {
+          "path": "project/user_source/hdl_source/gray_gaussian3x3.v",
+          "sha256": "dd2849a9aa964ef1d287381d89d039040a94af120b640d2b2b54a6a763ce7eee"
+        },
+        {
+          "path": "project/user_source/hdl_source/hdmi_mixer.v",
+          "sha256": "c5228e078d937bf3a8aec4a3c81afa78e0ecacd1cfe895ce65dba97ddb750dbf"
+        },
+        {
+          "path": "project/user_source/hdl_source/image_eram.v",
+          "sha256": "5e0d9c3d3cc921ef8f214f274571bfe74c4d8427cddf62c03fd52a8ef9537686"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_0.dath",
+          "sha256": "06942260893b4b558babfa76f8ac1ffcc1df8388758e73248ad7d51490755db7"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_0_lane_1.dath",
+          "sha256": "e7cbf9b82714eb38be42f4cb1cb5083fc9d994031a3a342f77438bde217d0576"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_0.dath",
+          "sha256": "a04a2ab5226ca4a3845115ca257b1774ec27155f328426d86d1d5a70bad0ce82"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_1_lane_1.dath",
+          "sha256": "d0b602051ea4ffd8bf0440f5c1cc6aabcaf4125c402dc869e711fbbb13f1f1e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_0.dath",
+          "sha256": "b1c77158a400d035d0f05ad4df53fb158fec5d76f0c9a2dcab5a1043cb56c3be"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_2_lane_1.dath",
+          "sha256": "a8a6abfd170e07739b4e7a3ab43461c50b7bfc07513f86aa5f97f9cc452fab3c"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/logo_palette_data/bank_3_lane_1.dath",
+          "sha256": "7b1059bc434f2f536c201b6a0d171673c3bd198bb338ad6eca14b5560ba99784"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        },
+        {
+          "path": "project/user_source/hdl_source/pixel_gray_pipe.v",
+          "sha256": "9d39b14bb8e7ae2ca25db2185c63ec58f55dc36a46cfc600b29c403b41abe997"
+        },
+        {
+          "path": "project/user_source/hdl_source/sobel3x3.v",
+          "sha256": "84fe8161f74578ffb9cfbb8ab492d452968d695b4de6fa8788070205ecb5acbc"
+        },
+        {
+          "path": "project/user_source/hdl_source/status_osd.v",
+          "sha256": "5b9f62f218b4c20c48318c85ded6c800f927cf1b792c2c880d71e5dd5d6a0e94"
+        },
+        {
+          "path": "project/user_source/hdl_source/video_stream_delay.v",
+          "sha256": "8c3a3cc50fd9ddd9737fdf3e42a1969fcb858c599560d0cd668df00c29feff76"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": true
+    },
+    "tb_can_fault_snapshot": {
+      "inputs": [
+        {
+          "path": "sim/inputs/b1d20cf413e3_tb_can_fault_snapshot.v",
+          "sha256": "b1d20cf413e38fc38471ecac098c82c27056dc0f10ca2235415698e9fc4c164e"
+        },
+        {
+          "path": "project/user_source/hdl_source/CanFaultSnapshot.v",
+          "sha256": "6d39f0fd868954e9c0158b110c1ca41ac2c77b401ba5b59d24c4f37a6e0c1ee7"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_can_probe_osd": {
+      "inputs": [
+        {
+          "path": "sim/inputs/d39100f2bedb_tb_can_probe_osd.v",
+          "sha256": "d39100f2bedba272d502c188608995254214d2595642ff97ea705ba857b0a66b"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_motion_horizontal": {
+      "inputs": [
+        {
+          "path": "sim/inputs/6186ba808b01_tb_motion_horizontal.v",
+          "sha256": "6186ba808b01118b3877df6ef83c76fcf05b00f0f64ef7e35bb7a3137bd429f6"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_finish_trial.v",
+          "sha256": "7998f530bd3009d79abd3dbc209ffa9c39dfdc9c740f055869ba05b35f880998"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_gray_ram.v",
+          "sha256": "cdf99d963d0c355cf33448c9b2c0b138bd1ef003c7d062d75cd3b383274542d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        },
+        {
+          "path": "sim/inputs/8da47f1de867_ph1p_eram_sim.v",
+          "sha256": "8da47f1de867db638b545d04d492ec5442a9a1169b062d4cb829105d297274fd"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_motion_horizontal_fast": {
+      "inputs": [
+        {
+          "path": "sim/inputs/b279675e2610_tb_motion_horizontal_fast.v",
+          "sha256": "b279675e2610f04044095b8a5daaa5b2841155b7e46abdf059f1df8c9792dcc9"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_finish_trial.v",
+          "sha256": "7998f530bd3009d79abd3dbc209ffa9c39dfdc9c740f055869ba05b35f880998"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_gray_ram.v",
+          "sha256": "cdf99d963d0c355cf33448c9b2c0b138bd1ef003c7d062d75cd3b383274542d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        },
+        {
+          "path": "sim/inputs/8da47f1de867_ph1p_eram_sim.v",
+          "sha256": "8da47f1de867db638b545d04d492ec5442a9a1169b062d4cb829105d297274fd"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_motion_horizontal_joint": {
+      "inputs": [
+        {
+          "path": "sim/inputs/fc405303835b_tb_motion_horizontal_joint.v",
+          "sha256": "fc405303835b175502d7c092914f9abafef3e8b43e48091b154a2acdc805cc24"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_finish_trial.v",
+          "sha256": "7998f530bd3009d79abd3dbc209ffa9c39dfdc9c740f055869ba05b35f880998"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_gray_ram.v",
+          "sha256": "cdf99d963d0c355cf33448c9b2c0b138bd1ef003c7d062d75cd3b383274542d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        },
+        {
+          "path": "sim/inputs/8da47f1de867_ph1p_eram_sim.v",
+          "sha256": "8da47f1de867db638b545d04d492ec5442a9a1169b062d4cb829105d297274fd"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_motion_horizontal_late": {
+      "inputs": [
+        {
+          "path": "sim/inputs/ae1ac90bf2e6_tb_motion_horizontal_late.v",
+          "sha256": "ae1ac90bf2e6f78ab90becf906e260ebf8bf49d75fdf984f9fe5a2e93b4134d1"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_finish_trial.v",
+          "sha256": "7998f530bd3009d79abd3dbc209ffa9c39dfdc9c740f055869ba05b35f880998"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_gray_ram.v",
+          "sha256": "cdf99d963d0c355cf33448c9b2c0b138bd1ef003c7d062d75cd3b383274542d5"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        },
+        {
+          "path": "sim/inputs/8da47f1de867_ph1p_eram_sim.v",
+          "sha256": "8da47f1de867db638b545d04d492ec5442a9a1169b062d4cb829105d297274fd"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_motion_horizontal_osd": {
+      "inputs": [
+        {
+          "path": "sim/inputs/8fc5eb7e401c_tb_motion_horizontal_osd.v",
+          "sha256": "8fc5eb7e401ce5f191596750564ed33e95bb11d01464d835cd880e917e28513d"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_replay_osd.v",
+          "sha256": "4708362eb70da615f0b7dc0e21c5620e9685822020cdc8c2e2213ac02de97c58"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_motion_horizontal_osd_y472": {
+      "inputs": [
+        {
+          "path": "sim/inputs/b33f1df5b3cc_tb_motion_horizontal_osd_y472.v",
+          "sha256": "b33f1df5b3cc86471c7b4116e939214d005902a4c8a17f79f07f8aceaf900477"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_replay_osd.v",
+          "sha256": "4708362eb70da615f0b7dc0e21c5620e9685822020cdc8c2e2213ac02de97c58"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_motion_horizontal_osd_y528": {
+      "inputs": [
+        {
+          "path": "sim/inputs/2b50dcd030ab_tb_motion_horizontal_osd_y528.v",
+          "sha256": "2b50dcd030ab117942182274c7a6df2fcf0f921bf85d51a4f1818a0edce058e0"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_replay_osd.v",
+          "sha256": "4708362eb70da615f0b7dc0e21c5620e9685822020cdc8c2e2213ac02de97c58"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_motor_status_osd": {
+      "inputs": [
+        {
+          "path": "sim/inputs/36683e6532d4_tb_motor_status_osd.v",
+          "sha256": "36683e6532d4e46e2b952629285177f24f20cf33f5d07dc733eb9d9b42a8473f"
+        },
+        {
+          "path": "project/user_source/hdl_source/motion_trial_osd.v",
+          "sha256": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d"
+        },
+        {
+          "path": "project/user_source/hdl_source/osd_char_lib.v",
+          "sha256": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_can_packet": {
+      "inputs": [
+        {
+          "path": "sim/inputs/fd8993c7430a_tb_can_packet.v",
+          "sha256": "fd8993c7430a6ac5dc8c0d02c72f68ea695307f221a8a742755fcfcc5c080b9e"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_acf.v",
+          "sha256": "404e8581e035a45b6830bba6a1e87c7899e7f54d4e3940c33ba1a25d1f20b4d6"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_bsp.v",
+          "sha256": "2c3f6ed47e9f72a425c5b51980e2d0ac58640e540eb2b2a14ebe9dc2e5fc96e1"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_btl.v",
+          "sha256": "7f6c42ea3d790b1643389581792ed293266d98eb0a3c1d01e6ddc777482e8335"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_crc.v",
+          "sha256": "ae60397523f22b1ddcff600838949c6ded70d801d54d105ca0ad0a51013fdc07"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_defines.v",
+          "sha256": "9f970ffb6f2b6b5ce67d450c50969265107b67604cf641334bac5bc5378bc745"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_fifo.v",
+          "sha256": "54fcf4dbfa3f0b40d24d17b758256a0e5fabe3cd45531cf2fb1a702665ae4940"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_ibo.v",
+          "sha256": "4afb496a2b8e3197a5f6accaf2cb493c4ff1d8b645748dfa1a1f8535acbcc7cf"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register.v",
+          "sha256": "691454933514031ddd0f3694e1ffe68b19822ec9113b30f88dc1f2c3ca8e4fd0"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_asyn.v",
+          "sha256": "4b83cdf224c3560f740b44d9db9d7c78e7dff6139e98685796e16baea5605561"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_asyn_syn.v",
+          "sha256": "308ee96d28a92179915ed0ce90a8345b7b4cc4e515e245d6f00eca2fcabb9e61"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_syn.v",
+          "sha256": "2c8b90f432acf65ed23f6b88923648f02f5e45f5727608a7011f873c633437b7"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_registers.v",
+          "sha256": "243983124262282411a056fc08fbe0309315549ac27037e236ddc584337779d3"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_top.v",
+          "sha256": "bff3ceee16086141e214ec1f476b7ecbf64ec72058bced30508d05fceb2bfe81"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/timescale.v",
+          "sha256": "6a61cf8db88af470f457dadffcf627cd8f325a00fa3d8b239093520cf7fa94d8"
+        },
+        {
+          "path": "project/user_source/hdl_source/CanPacketInterface.v",
+          "sha256": "628f8bf899dc63de1005b40f2019a4eb30e13a1a9693325b85b4af54c029b014"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_main_gap20": {
+      "inputs": [
+        {
+          "path": "sim/inputs/54ad618a79e4_tb_main_gap20.v",
+          "sha256": "54ad618a79e4a6022639d4e8575cd5691b776515395b0e4aa91b1c2adc44de1d"
+        },
+        {
+          "path": "project/user_source/hdl_source/EmmCommandInterface.v",
+          "sha256": "0da5652be64697b2096e1f2c5415006168186c7628aa524534bd4b3d12968c62"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_defines.v",
+          "sha256": "9f970ffb6f2b6b5ce67d450c50969265107b67604cf641334bac5bc5378bc745"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/timescale.v",
+          "sha256": "6a61cf8db88af470f457dadffcf627cd8f325a00fa3d8b239093520cf7fa94d8"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_emm_command_marker": {
+      "inputs": [
+        {
+          "path": "sim/inputs/57600d3e1a2b_tb_emm_command_marker.v",
+          "sha256": "57600d3e1a2b534c11b53a14010ee0d73d388a947afe8af1e0fa9160acb1256a"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_defines.v",
+          "sha256": "9f970ffb6f2b6b5ce67d450c50969265107b67604cf641334bac5bc5378bc745"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/timescale.v",
+          "sha256": "6a61cf8db88af470f457dadffcf627cd8f325a00fa3d8b239093520cf7fa94d8"
+        },
+        {
+          "path": "project/user_source/hdl_source/EmmCommandInterface.v",
+          "sha256": "0da5652be64697b2096e1f2c5415006168186c7628aa524534bd4b3d12968c62"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_emm_can_marker": {
+      "inputs": [
+        {
+          "path": "sim/inputs/b275afe8d422_tb_emm_can_marker.v",
+          "sha256": "b275afe8d422a91eea4e5d0670f3ed907d3fbc8499e2da6f494525a46342f6ec"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_acf.v",
+          "sha256": "404e8581e035a45b6830bba6a1e87c7899e7f54d4e3940c33ba1a25d1f20b4d6"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_bsp.v",
+          "sha256": "2c3f6ed47e9f72a425c5b51980e2d0ac58640e540eb2b2a14ebe9dc2e5fc96e1"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_btl.v",
+          "sha256": "7f6c42ea3d790b1643389581792ed293266d98eb0a3c1d01e6ddc777482e8335"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_crc.v",
+          "sha256": "ae60397523f22b1ddcff600838949c6ded70d801d54d105ca0ad0a51013fdc07"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_defines.v",
+          "sha256": "9f970ffb6f2b6b5ce67d450c50969265107b67604cf641334bac5bc5378bc745"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_fifo.v",
+          "sha256": "54fcf4dbfa3f0b40d24d17b758256a0e5fabe3cd45531cf2fb1a702665ae4940"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_ibo.v",
+          "sha256": "4afb496a2b8e3197a5f6accaf2cb493c4ff1d8b645748dfa1a1f8535acbcc7cf"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register.v",
+          "sha256": "691454933514031ddd0f3694e1ffe68b19822ec9113b30f88dc1f2c3ca8e4fd0"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_asyn.v",
+          "sha256": "4b83cdf224c3560f740b44d9db9d7c78e7dff6139e98685796e16baea5605561"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_asyn_syn.v",
+          "sha256": "308ee96d28a92179915ed0ce90a8345b7b4cc4e515e245d6f00eca2fcabb9e61"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_syn.v",
+          "sha256": "2c8b90f432acf65ed23f6b88923648f02f5e45f5727608a7011f873c633437b7"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_registers.v",
+          "sha256": "243983124262282411a056fc08fbe0309315549ac27037e236ddc584337779d3"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_top.v",
+          "sha256": "bff3ceee16086141e214ec1f476b7ecbf64ec72058bced30508d05fceb2bfe81"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/timescale.v",
+          "sha256": "6a61cf8db88af470f457dadffcf627cd8f325a00fa3d8b239093520cf7fa94d8"
+        },
+        {
+          "path": "project/user_source/hdl_source/CanPacketInterface.v",
+          "sha256": "628f8bf899dc63de1005b40f2019a4eb30e13a1a9693325b85b4af54c029b014"
+        },
+        {
+          "path": "project/user_source/hdl_source/EmmCommandInterface.v",
+          "sha256": "0da5652be64697b2096e1f2c5415006168186c7628aa524534bd4b3d12968c62"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_probe_integration": {
+      "inputs": [
+        {
+          "path": "sim/inputs/6ee5ca0a5d21_tb_probe_integration.v",
+          "sha256": "6ee5ca0a5d218f61e104b0fd9f7497caa4741409cade77f5577790bccde69217"
+        },
+        {
+          "path": "project/user_source/hdl_source/RaceMotorControl.v",
+          "sha256": "cf6e1a974b90e5a912615a6bfb24ed8f1081b0fa290f82b9c57b6b11f37eb23e"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_switch_ctrl.v",
+          "sha256": "afe53abb31691905829951cb4af628a8ff044c29d905b95ca26ddaf47d4b891c"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_acf.v",
+          "sha256": "404e8581e035a45b6830bba6a1e87c7899e7f54d4e3940c33ba1a25d1f20b4d6"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_bsp.v",
+          "sha256": "2c3f6ed47e9f72a425c5b51980e2d0ac58640e540eb2b2a14ebe9dc2e5fc96e1"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_btl.v",
+          "sha256": "7f6c42ea3d790b1643389581792ed293266d98eb0a3c1d01e6ddc777482e8335"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_crc.v",
+          "sha256": "ae60397523f22b1ddcff600838949c6ded70d801d54d105ca0ad0a51013fdc07"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_defines.v",
+          "sha256": "9f970ffb6f2b6b5ce67d450c50969265107b67604cf641334bac5bc5378bc745"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_fifo.v",
+          "sha256": "54fcf4dbfa3f0b40d24d17b758256a0e5fabe3cd45531cf2fb1a702665ae4940"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_ibo.v",
+          "sha256": "4afb496a2b8e3197a5f6accaf2cb493c4ff1d8b645748dfa1a1f8535acbcc7cf"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register.v",
+          "sha256": "691454933514031ddd0f3694e1ffe68b19822ec9113b30f88dc1f2c3ca8e4fd0"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_asyn.v",
+          "sha256": "4b83cdf224c3560f740b44d9db9d7c78e7dff6139e98685796e16baea5605561"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_asyn_syn.v",
+          "sha256": "308ee96d28a92179915ed0ce90a8345b7b4cc4e515e245d6f00eca2fcabb9e61"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_syn.v",
+          "sha256": "2c8b90f432acf65ed23f6b88923648f02f5e45f5727608a7011f873c633437b7"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_registers.v",
+          "sha256": "243983124262282411a056fc08fbe0309315549ac27037e236ddc584337779d3"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_top.v",
+          "sha256": "bff3ceee16086141e214ec1f476b7ecbf64ec72058bced30508d05fceb2bfe81"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/timescale.v",
+          "sha256": "6a61cf8db88af470f457dadffcf627cd8f325a00fa3d8b239093520cf7fa94d8"
+        },
+        {
+          "path": "project/user_source/hdl_source/CanPacketInterface.v",
+          "sha256": "628f8bf899dc63de1005b40f2019a4eb30e13a1a9693325b85b4af54c029b014"
+        },
+        {
+          "path": "project/user_source/hdl_source/EmmCommandInterface.v",
+          "sha256": "0da5652be64697b2096e1f2c5415006168186c7628aa524534bd4b3d12968c62"
+        },
+        {
+          "path": "sim/inputs/d6b76c5ebf50_main_can_harness.v",
+          "sha256": "d6b76c5ebf50affe551489a12b9b0aea6f2eab995cd89d81f5e4fe911b0b1eec"
+        },
+        {
+          "path": "project/user_source/hdl_source/CanFaultSnapshot.v",
+          "sha256": "6d39f0fd868954e9c0158b110c1ca41ac2c77b401ba5b59d24c4f37a6e0c1ee7"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    },
+    "tb_probe_command_loss": {
+      "inputs": [
+        {
+          "path": "sim/inputs/422e606e90fd_tb_probe_command_loss.v",
+          "sha256": "422e606e90fd90ffbfeca615c5f57cae2a95323bb76bf92434f3bfd2e36f581b"
+        },
+        {
+          "path": "project/user_source/hdl_source/RaceMotorControl.v",
+          "sha256": "cf6e1a974b90e5a912615a6bfb24ed8f1081b0fa290f82b9c57b6b11f37eb23e"
+        },
+        {
+          "path": "project/user_source/hdl_source/color_switch_ctrl.v",
+          "sha256": "afe53abb31691905829951cb4af628a8ff044c29d905b95ca26ddaf47d4b891c"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_acf.v",
+          "sha256": "404e8581e035a45b6830bba6a1e87c7899e7f54d4e3940c33ba1a25d1f20b4d6"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_bsp.v",
+          "sha256": "2c3f6ed47e9f72a425c5b51980e2d0ac58640e540eb2b2a14ebe9dc2e5fc96e1"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_btl.v",
+          "sha256": "7f6c42ea3d790b1643389581792ed293266d98eb0a3c1d01e6ddc777482e8335"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_crc.v",
+          "sha256": "ae60397523f22b1ddcff600838949c6ded70d801d54d105ca0ad0a51013fdc07"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_defines.v",
+          "sha256": "9f970ffb6f2b6b5ce67d450c50969265107b67604cf641334bac5bc5378bc745"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_fifo.v",
+          "sha256": "54fcf4dbfa3f0b40d24d17b758256a0e5fabe3cd45531cf2fb1a702665ae4940"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_ibo.v",
+          "sha256": "4afb496a2b8e3197a5f6accaf2cb493c4ff1d8b645748dfa1a1f8535acbcc7cf"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register.v",
+          "sha256": "691454933514031ddd0f3694e1ffe68b19822ec9113b30f88dc1f2c3ca8e4fd0"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_asyn.v",
+          "sha256": "4b83cdf224c3560f740b44d9db9d7c78e7dff6139e98685796e16baea5605561"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_asyn_syn.v",
+          "sha256": "308ee96d28a92179915ed0ce90a8345b7b4cc4e515e245d6f00eca2fcabb9e61"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_register_syn.v",
+          "sha256": "2c8b90f432acf65ed23f6b88923648f02f5e45f5727608a7011f873c633437b7"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_registers.v",
+          "sha256": "243983124262282411a056fc08fbe0309315549ac27037e236ddc584337779d3"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/can_top.v",
+          "sha256": "bff3ceee16086141e214ec1f476b7ecbf64ec72058bced30508d05fceb2bfe81"
+        },
+        {
+          "path": "project/user_source/hdl_source/can/timescale.v",
+          "sha256": "6a61cf8db88af470f457dadffcf627cd8f325a00fa3d8b239093520cf7fa94d8"
+        },
+        {
+          "path": "project/user_source/hdl_source/CanPacketInterface.v",
+          "sha256": "628f8bf899dc63de1005b40f2019a4eb30e13a1a9693325b85b4af54c029b014"
+        },
+        {
+          "path": "project/user_source/hdl_source/EmmCommandInterface.v",
+          "sha256": "0da5652be64697b2096e1f2c5415006168186c7628aa524534bd4b3d12968c62"
+        },
+        {
+          "path": "sim/inputs/d6b76c5ebf50_main_can_harness.v",
+          "sha256": "d6b76c5ebf50affe551489a12b9b0aea6f2eab995cd89d81f5e4fe911b0b1eec"
+        },
+        {
+          "path": "project/user_source/hdl_source/CanFaultSnapshot.v",
+          "sha256": "6d39f0fd868954e9c0158b110c1ca41ac2c77b401ba5b59d24c4f37a6e0c1ee7"
+        }
+      ],
+      "baseline_passed": true,
+      "baseline_reused_identical_compiled_inputs": false
+    }
+  },
+  "note": "49 cases with fixed input hashes. Packaging does not rerun every case; parameter and data dependencies remain as recorded in the original evidence set."
+}

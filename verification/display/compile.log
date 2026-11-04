@@ -1,0 +1,11 @@
+Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+Start time: 11:44:36 on Nov 04,2026
+vlog -work work sim/tb_hidden_display.v project/user_source/hdl_source/motion_trial_osd.v project/user_source/hdl_source/osd_char_lib.v 
+-- Compiling module tb_hidden_display
+-- Compiling module motion_trial_osd
+-- Compiling module osd_char_lib
+
+Top level modules:
+	tb_hidden_display
+End time: 11:44:37 on Nov 04,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

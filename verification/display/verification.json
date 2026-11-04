@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "inputs": {
+    "tb_hidden_display.v": "60e42dd2f385155699f254f6b8326726b8d271e228731a2b8dc5a50738436363",
+    "project/user_source/hdl_source/motion_trial_osd.v": "d20e1142349074a4b03f653f586ab7b0307092c8b1cf699bc579178a4e13111d",
+    "project/user_source/hdl_source/osd_char_lib.v": "8e2d7ae8e52454ae671901f868ff20c6bb20eb4803bf2f4be745691847e35c38"
+  },
+  "inputs_unchanged": true,
+  "scope": "RTL display contract; physical netlist one-LUT equivalence is a separate check",
+  "observations": [
+    "# PASS 1843200 pixels; yellow removed, CAN green retained; probe registers still capture"
+  ]
+}

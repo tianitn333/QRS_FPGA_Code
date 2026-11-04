@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "native_exit_code": 0,
+  "reports": {
+    "ORIGINAL": {
+      "bytes": 91582348,
+      "lines": 2105161,
+      "nets": 49353,
+      "can_nets": 1796,
+      "probe_nets": 149,
+      "route_sections": 49353,
+      "sha256": "4419ef35f3d74fe45c5f0af75bf3439135007f99b344e06ed5c93872b62e240c"
+    },
+    "HIDDEN": {
+      "bytes": 91582348,
+      "lines": 2105161,
+      "nets": 49353,
+      "can_nets": 1796,
+      "probe_nets": 149,
+      "route_sections": 49353,
+      "sha256": "4419ef35f3d74fe45c5f0af75bf3439135007f99b344e06ed5c93872b62e240c"
+    }
+  },
+  "identical": true,
+  "scope": "all final physical nets, attributes and detailed route from/to edges; RUN-1001 retained",
+  "protected_unchanged": true,
+  "native_log_archive": "verification/routes/native.log.zip",
+  "native_log_archive_sha256": "68dac22627df432fe37427f8a4d2ed53e8b1868d4ffb285f6a562c83a1415d90",
+  "verification_method": "解压后取 ROUTE_DUMP_ORIGINAL/HIDDEN_BEGIN..END 之间的 report_nets 正文，CRLF 归一为 LF；两段各 91582348 字节、2105161 行，sha256 均为 4419ef35f3d74fe45c5f0af75bf3439135007f99b344e06ed5c93872b62e240c。"
+}

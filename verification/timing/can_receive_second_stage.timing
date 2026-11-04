@@ -1,0 +1,456 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Wed Nov  4 11:47:03 2026
+
+Top Model           : design_top_wrapper
+Device              : PH1P35MDG324
+Speed               : 3
+STA coverage        : 96.18%
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     HDMI_PIXEL_CLK -> HDMI_PIXEL_CLK
+Type           :     Self
+From Clock     :     HDMI_PIXEL_CLK
+To Clock       :     HDMI_PIXEL_CLK
+Min Period     :     1.490ns
+Fmax           :     671.141MHz
+
+Statistics:
+Max            : SWNS     11.843ns, STNS      0.000ns,         0 Viol Endpoints,         3 Total Endpoints,         3 Paths Analyzed
+Min            : HWNS      0.140ns, HTNS      0.000ns,         0 Viol Endpoints,         3 Total Endpoints,         3 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+Max Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 11.843ns
+Begin Point         : S_can_receive_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_can_probe/flag_tx_low_reg_syn_6.id (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 1.313ns (cell 0.348ns (26%), net 0.965ns (74%))
+Clock Skew          : 0.011ns
+Logic Level         : 1 ( LUT5=1 )
+Max Fanout          : 3
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.376          1.181          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.079          1.260          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.633          1.893          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: S_can_receive_meta_reg_syn_3.clk
+launch edge                             0.000    r     1.893               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y022z1          0.137    r     2.030          pin: S_can_receive_meta_reg_syn_3.oqb
+net (fo=3)                              0.965          2.995          net: S_can_receive_level,  ../../../user_source/hdl_source/design_top_wrapper.v(1033)
+                                                                      pin: u_can_probe/flag_tx_low_reg_syn_6.id
+LUT5 (reg)          x019y027z7          0.211    f     3.206       1  net: u_can_probe/dec_snapshot[17],  ../../../user_source/hdl_source/CanFaultSnapshot.v(25)
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.206               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.322          1.105          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.068          1.173          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.551          1.724          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_can_probe/flag_tx_low_reg_syn_6.clk
+capture edge                           13.333    r    15.057               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         14.993               
+clock uncertainty                      -0.102         14.891               
+clock pessimism                         0.158         15.049               
+--------------------------------------------------------------------  ---------------
+Required                                              15.049               
+--------------------------------------------------------------------  ---------------
+Slack                                                 11.843               
+
+Slack               : 12.374ns
+Begin Point         : S_can_receive_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_can_probe/reg_snapshot_o_reg[49]_syn_2.imb (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.782ns (cell 0.215ns (27%), net 0.567ns (73%))
+Clock Skew          : 0.011ns
+Logic Level         : 0
+Max Fanout          : 3
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.376          1.181          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.079          1.260          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.633          1.893          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: S_can_receive_meta_reg_syn_3.clk
+launch edge                             0.000    r     1.893               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y022z1          0.137    r     2.030          pin: S_can_receive_meta_reg_syn_3.oqb
+net (fo=3)                              0.567          2.597          net: S_can_receive_level,  ../../../user_source/hdl_source/design_top_wrapper.v(1033)
+                                                                      pin: u_can_probe/reg_snapshot_o_reg[49]_syn_2.imb
+reg                 x019y030z7          0.078    r     2.675          net: u_can_probe/o_snapshot[19],  ../../../user_source/hdl_source/CanFaultSnapshot.v(15)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.675               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.322          1.105          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.068          1.173          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.551          1.724          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_can_probe/reg_snapshot_o_reg[49]_syn_2.clk
+capture edge                           13.333    r    15.057               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         14.993               
+clock uncertainty                      -0.102         14.891               
+clock pessimism                         0.158         15.049               
+--------------------------------------------------------------------  ---------------
+Required                                              15.049               
+--------------------------------------------------------------------  ---------------
+Slack                                                 12.374               
+
+Slack               : 12.432ns
+Begin Point         : S_can_receive_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_motor_can/CanCore_Inst/rx_sync_tmp_reg_syn_3.ima (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : setup
+Process             : slow_m40c
+Budget              : 13.333ns { HDMI_PIXEL_CLK rising@13.333ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.660ns (cell 0.224ns (33%), net 0.436ns (67%))
+Clock Skew          : 0.075ns
+Logic Level         : 0
+Max Fanout          : 3
+Clock Uncertainty   : 0.102ns (sdc uncertainty: 0.000ns, default uncertainty: 0.102ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.684          1.494          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.115          1.609          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.645         -0.036          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.825          0.789          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.016          0.805          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.376          1.181          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.079          1.260          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.633          1.893          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: S_can_receive_meta_reg_syn_3.clk
+launch edge                             0.000    r     1.893               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y022z1          0.137    r     2.030          pin: S_can_receive_meta_reg_syn_3.oqb
+net (fo=3)                              0.436          2.466          net: S_can_receive_level,  ../../../user_source/hdl_source/design_top_wrapper.v(1033)
+                                                                      pin: u_motor_can/CanCore_Inst/rx_sync_tmp_reg_syn_3.ima
+reg                 x016y023z1          0.087    r     2.553          net: u_motor_can/CanCore_Inst/rx_sync_tmp,  ../../../user_source/hdl_source/can/can_top.v(440)
+--------------------------------------------------------------------  ---------------
+Arrival                                                2.553               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.745          0.745          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.629          1.374          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.099          1.473          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -1.411          0.062          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.707          0.769          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.014          0.783          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.322          1.105          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.068          1.173          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.551          1.724          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_motor_can/CanCore_Inst/rx_sync_tmp_reg_syn_3.clk
+capture edge                           13.333    r    15.057               
+--------------------------------------------------------------------  ---------------
+setup                                  -0.064         14.993               
+clock uncertainty                      -0.102         14.891               
+clock pessimism                         0.094         14.985               
+--------------------------------------------------------------------  ---------------
+Required                                              14.985               
+--------------------------------------------------------------------  ---------------
+Slack                                                 12.432               
+
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 0.140ns
+Begin Point         : S_can_receive_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_motor_can/CanCore_Inst/rx_sync_tmp_reg_syn_3.ima (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.223ns (cell 0.094ns (42%), net 0.129ns (58%))
+Clock Skew          : 0.021ns
+Logic Level         : 0
+Max Fanout          : 3
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.136          0.940          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.025          0.965          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.218          1.183          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: S_can_receive_meta_reg_syn_3.clk
+launch edge                             0.000    r     1.183               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y022z1          0.065    r     1.248          pin: S_can_receive_meta_reg_syn_3.oqb
+net (fo=3)                              0.129          1.377          net: S_can_receive_level,  ../../../user_source/hdl_source/design_top_wrapper.v(1033)
+                                                                      pin: u_motor_can/CanCore_Inst/rx_sync_tmp_reg_syn_3.ima
+reg                 x016y023z1          0.029    f     1.406          net: u_motor_can/CanCore_Inst/rx_sync_tmp,  ../../../user_source/hdl_source/can/can_top.v(440)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.406               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.148          1.066          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.030          1.096          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.240          1.336          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_motor_can/CanCore_Inst/rx_sync_tmp_reg_syn_3.clk
+capture edge                            0.000    r     1.336               
+--------------------------------------------------------------------  ---------------
+hold                                    0.012          1.348               
+clock uncertainty                       0.050          1.398               
+clock pessimism                        -0.132          1.266               
+--------------------------------------------------------------------  ---------------
+Required                                               1.266               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.140               
+
+Slack               : 0.196ns
+Begin Point         : S_can_receive_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_can_probe/reg_snapshot_o_reg[49]_syn_2.imb (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.267ns (cell 0.091ns (34%), net 0.176ns (66%))
+Clock Skew          : 0.009ns
+Logic Level         : 0
+Max Fanout          : 3
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.136          0.940          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.025          0.965          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.218          1.183          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: S_can_receive_meta_reg_syn_3.clk
+launch edge                             0.000    r     1.183               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y022z1          0.065    r     1.248          pin: S_can_receive_meta_reg_syn_3.oqb
+net (fo=3)                              0.176          1.424          net: S_can_receive_level,  ../../../user_source/hdl_source/design_top_wrapper.v(1033)
+                                                                      pin: u_can_probe/reg_snapshot_o_reg[49]_syn_2.imb
+reg                 x019y030z7          0.026    f     1.450          net: u_can_probe/o_snapshot[19],  ../../../user_source/hdl_source/CanFaultSnapshot.v(15)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.450               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.148          1.066          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.030          1.096          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.240          1.336          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_can_probe/reg_snapshot_o_reg[49]_syn_2.clk
+capture edge                            0.000    r     1.336               
+--------------------------------------------------------------------  ---------------
+hold                                    0.012          1.348               
+clock uncertainty                       0.050          1.398               
+clock pessimism                        -0.144          1.254               
+--------------------------------------------------------------------  ---------------
+Required                                               1.254               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.196               
+
+Slack               : 0.352ns
+Begin Point         : S_can_receive_meta_reg_syn_3.clk (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+End Point           : u_can_probe/flag_tx_low_reg_syn_6.id (rising edge triggered by clock HDMI_PIXEL_CLK  { rise@0.000000ns  fall@6.666000ns  period=13.333000 })
+Check Type          : hold
+Process             : fast_m40c
+Budget              : 0.000ns { HDMI_PIXEL_CLK rising@0.000ns - HDMI_PIXEL_CLK rising@0.000ns }
+Data Path Delay     : 0.423ns (cell 0.123ns (29%), net 0.300ns (71%))
+Clock Skew          : 0.009ns
+Logic Level         : 1 ( LUT5=1 )
+Max Fanout          : 3
+Clock Uncertainty   : 0.050ns (sdc uncertainty: 0.000ns, default uncertainty: 0.050ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.810          0.810          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.257          1.067          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.040          1.107          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.620          0.487          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.311          0.798          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.006          0.804          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.136          0.940          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.025          0.965          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.218          1.183          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: S_can_receive_meta_reg_syn_3.clk
+launch edge                             0.000    r     1.183               
+--------------------------------------------------------------------  ---------------
+clk2q               x019y022z1          0.065    r     1.248          pin: S_can_receive_meta_reg_syn_3.oqb
+net (fo=3)                              0.300          1.548          net: S_can_receive_level,  ../../../user_source/hdl_source/design_top_wrapper.v(1033)
+                                                                      pin: u_can_probe/flag_tx_low_reg_syn_6.id
+LUT5 (reg)          x019y027z7          0.058    f     1.606       1  net: u_can_probe/dec_snapshot[17],  ../../../user_source/hdl_source/CanFaultSnapshot.v(25)
+--------------------------------------------------------------------  ---------------
+Arrival                                                1.606               
+
+source latency                          0.000          0.000               
+port                C4                  0.000          0.000          pin: I_sys_clk
+hierarchy                               0.000          0.000          pin: I_sys_clk_syn_7.ipad
+HDIO                x033y078            0.915          0.915          pin: I_sys_clk_syn_7.sg09_di
+HDIO                x033y078            0.290          1.205          pin: I_sys_clk_syn_7.di
+net (fo=3)          x043y079            0.043          1.248          net: I_sys_clk_dup_6,  ../../../user_source/hdl_source/design_top_wrapper.v(4)
+                                                                      pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.refclk
+PLL                 x043y079           -0.675          0.573          pin: u_PLL/ph1p_phy_pll_wrapper_25a56e5ce2f9_Inst/u_PH1P_PHY_PLL.clkc[4]
+net (fo=1)                              0.338          0.911          net: u_motor_can/CanCore_Inst/wb_clk_i,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkin[0]
+GCLK                x023y039z16         0.007          0.918          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst.clkout
+net (fo=4)                              0.148          1.066          net: u_motor_can/CanCore_Inst/wb_clk_i_syn_652,  ../../../user_source/hdl_source/can/can_top.v(255)
+                                                                      pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkin
+SCLK                x023y019z1          0.030          1.096          pin: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2.clkout
+net (fo=1050)                           0.240          1.336          net: u_motor_can/CanCore_Inst/wb_clk_i_created_gclkinst_auto_created_sclk_s_0_l_bk2_sclk_outnet,  NOFILE(0)
+                                                                      pin: u_can_probe/flag_tx_low_reg_syn_6.clk
+capture edge                            0.000    r     1.336               
+--------------------------------------------------------------------  ---------------
+hold                                    0.012          1.348               
+clock uncertainty                       0.050          1.398               
+clock pessimism                        -0.144          1.254               
+--------------------------------------------------------------------  ---------------
+Required                                               1.254               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.352               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

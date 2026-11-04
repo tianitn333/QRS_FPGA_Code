@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "protected_files": 1112,
+  "protected_unchanged": true,
+  "source_unchanged": true,
+  "changed_user_source_files": [
+    "hdl_source/CanFaultSnapshot.v",
+    "hdl_source/CanPacketInterface.v",
+    "hdl_source/design_top_wrapper.v",
+    "hdl_source/EmmCommandInterface.v",
+    "hdl_source/motion_trial_osd.v",
+    "hdl_source/can/can_registers.v",
+    "hdl_source/can/can_top.v"
+  ],
+  "unchanged_user_source_files": 290,
+  "pin_table": {
+    "O_can_transmit": "P9",
+    "I_can_receive": "P8",
+    "I_motor_arm": "B4",
+    "I_motor_reference": "E11"
+  },
+  "pin_assignment_byte_identical": true,
+  "retained_timing_constraints_byte_identical": true,
+  "literal_observation_edit_plan_matches": true,
+  "race_controller_byte_identical": true,
+  "new_clocks_or_resets": false,
+  "new_can_frames": false,
+  "new_wishbone_reads_or_writes": false,
+  "old_database_reused": false,
+  "limitations": "Observation fanouts and storage change layout; this is not gate-level equivalence or a root-cause repair."
+}

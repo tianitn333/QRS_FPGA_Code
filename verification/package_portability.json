@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "portable_AL_entries": 109,
+  "all_source_IP_constraints_present": true,
+  "production_source_hashes_match_release": true,
+  "portable_database_regeneration_matches": {
+    "motion_can_hidden_regenerated.bit": true,
+    "motion_can_hidden_reapplied.bit": true
+  },
+  "portable_TD_no_errors": true,
+  "full_source_PNR_rerun": false,
+  "original_release_unchanged": true
+}

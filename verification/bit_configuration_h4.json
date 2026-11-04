@@ -1,0 +1,185 @@
+{
+  "passed": true,
+  "native_exit_codes": {
+    "original": 0,
+    "hidden": 0
+  },
+  "original_config_identical_except_date_comment": true,
+  "reloaded_netlists_identical_to_exports": {
+    "original": true,
+    "hidden": true
+  },
+  "payload_same_length": true,
+  "payload_differences": [
+    {
+      "offset": 262507,
+      "old_hex": "40",
+      "new_hex": "00",
+      "changed_bits": 1
+    },
+    {
+      "offset": 262614,
+      "old_hex": "16",
+      "new_hex": "11",
+      "changed_bits": 3
+    },
+    {
+      "offset": 262615,
+      "old_hex": "55",
+      "new_hex": "33",
+      "changed_bits": 4
+    },
+    {
+      "offset": 262776,
+      "old_hex": "8e",
+      "new_hex": "d8",
+      "changed_bits": 4
+    },
+    {
+      "offset": 262777,
+      "old_hex": "71",
+      "new_hex": "cd",
+      "changed_bits": 5
+    },
+    {
+      "offset": 262778,
+      "old_hex": "a1",
+      "new_hex": "79",
+      "changed_bits": 4
+    },
+    {
+      "offset": 262779,
+      "old_hex": "09",
+      "new_hex": "16",
+      "changed_bits": 5
+    },
+    {
+      "offset": 262843,
+      "old_hex": "80",
+      "new_hex": "00",
+      "changed_bits": 1
+    },
+    {
+      "offset": 262950,
+      "old_hex": "13",
+      "new_hex": "04",
+      "changed_bits": 4
+    },
+    {
+      "offset": 262951,
+      "old_hex": "3f",
+      "new_hex": "58",
+      "changed_bits": 5
+    },
+    {
+      "offset": 263112,
+      "old_hex": "70",
+      "new_hex": "35",
+      "changed_bits": 3
+    },
+    {
+      "offset": 263113,
+      "old_hex": "3e",
+      "new_hex": "8f",
+      "changed_bits": 4
+    },
+    {
+      "offset": 263114,
+      "old_hex": "21",
+      "new_hex": "f6",
+      "changed_bits": 6
+    },
+    {
+      "offset": 263115,
+      "old_hex": "11",
+      "new_hex": "5e",
+      "changed_bits": 5
+    },
+    {
+      "offset": 1176572,
+      "old_hex": "e4",
+      "new_hex": "e2",
+      "changed_bits": 2
+    },
+    {
+      "offset": 1176573,
+      "old_hex": "db",
+      "new_hex": "f5",
+      "changed_bits": 4
+    },
+    {
+      "offset": 1176574,
+      "old_hex": "1f",
+      "new_hex": "a5",
+      "changed_bits": 5
+    },
+    {
+      "offset": 1176575,
+      "old_hex": "56",
+      "new_hex": "e4",
+      "changed_bits": 4
+    },
+    {
+      "offset": 1176576,
+      "old_hex": "30",
+      "new_hex": "ed",
+      "changed_bits": 6
+    },
+    {
+      "offset": 1176577,
+      "old_hex": "6d",
+      "new_hex": "f9",
+      "changed_bits": 3
+    },
+    {
+      "offset": 1176578,
+      "old_hex": "a6",
+      "new_hex": "c3",
+      "changed_bits": 4
+    },
+    {
+      "offset": 1176579,
+      "old_hex": "02",
+      "new_hex": "f4",
+      "changed_bits": 6
+    }
+  ],
+  "payload_changed_bytes": 22,
+  "payload_changed_bits": 88,
+  "header_changes": {
+    "original": [
+      "# Anlogic ASCII Bitstream",
+      "# Version: 6.2.168116",
+      "# Design name: design_top_wrapper",
+      "# Architecture: ph1_35p",
+      "# Package: PH1P35MDG324",
+      "# Date: 2026/11/ 4 11:50",
+      "# Global CRC: 11100100110110110001111101010110",
+      "# Transfer CRC: 10000011111101001000101111010100",
+      "# File Format: Bitstream",
+      "# SPI Feature: 1101110110111011011001100010001011111111111111111111111110000010",
+      "# USER CODE: 00000000010110010000000000000000"
+    ],
+    "hidden": [
+      "# Anlogic ASCII Bitstream",
+      "# Version: 6.2.168116",
+      "# Design name: design_top_wrapper",
+      "# Architecture: ph1_35p",
+      "# Package: PH1P35MDG324",
+      "# Date: 2026/11/ 4 11:51",
+      "# Global CRC: 11100010111101011010010111100100",
+      "# Transfer CRC: 10000011111101001000101111010100",
+      "# File Format: Bitstream",
+      "# SPI Feature: 1101110110111011011001100010001011111111111111111111111110000010",
+      "# USER CODE: 00000000010110010000000000000000"
+    ]
+  },
+  "hidden_bit_sha256": "5a5d32b2420552c769843064a71f010969ca903f5ed1a8d15eddaf47d1f8fb51",
+  "lut_old_hex": "01100000",
+  "lut_new_hex": "00000000",
+  "truth_table_inputs_checked": 64,
+  "all_hidden_outputs_equal_original_when_probe_window_disabled": true,
+  "protected_unchanged": true,
+  "published": false,
+  "payload_checksum_layout_not_independently_decoded": true
+}
