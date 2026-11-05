@@ -2,6 +2,10 @@
 
 整理日期：2026-11-04。目标器件 PH1P35MDG324 / Speed -3，顶层 `design_top_wrapper`，安路 TD 6.2.168116；既有仿真使用 ModelSim 2020.4。工程包含完整 FILL、三色识别、三道运动检测与唯一排名、七槽 720p DDR 证据回放，以及 500 kbit/s 双轴 CAN 旗帜控制。
 
+[![一镜到底演示：运动检测与 CAN 联动](demo_poster.jpg)](demo.mp4)
+
+点击画面播放完整演示（2 分 55 秒，1080p）。
+
 ## 快速入口
 
 1. 解压到短的 ASCII 路径（例如 `D:/QRS_FPGA_Code`）。TD、ModelSim 等工具需另行安装，不在包内。
@@ -13,6 +17,7 @@
 
 | 目录 | 内容 |
 | --- | --- |
+| `demo.mp4` | 一镜到底演示视频（1080p，2:55），封面图 `demo_poster.jpg` |
 | `project/` | TD 工程、RTL、IP、约束与各模块接口说明 |
 | `program/` | 已构建 bit 及 SHA256 侧车文件 |
 | `database/` | 用于布线后复现的 TD 数据库 |

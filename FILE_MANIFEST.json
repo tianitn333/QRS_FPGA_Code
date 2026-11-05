@@ -1,14 +1,16 @@
 {
   "format": 1,
   "scope": "Every packaged file except this manifest itself",
-  "file_count": 544,
+  "file_count": 546,
   "sha256": {
     ".gitattributes": "35284125160adf37c9ad4c05363111f1cbb0ec96a82e34fc615869128a87ce48",
     "LICENSE": "7c8869c475bad32ffbc14765e7f7c29fd3db3c073935a057bd2c7e3e31634954",
-    "README.md": "18f56ac4793da34dd68cf3548b341b4445b2e25c55732101d3cf68c32098e530",
+    "README.md": "439cea7fa596f60a8b37cb3bea7152719b0357f2f3d7e1e849d97a1cfe3d09c1",
     "RELEASE.json": "f5e1d6f3bf144a4506fd19ae2b09d6977c98d8c88eee4cfa03fb34c10b88733c",
     "database/hidden.db": "76c785d7dcb30372660a0373b8ff8463324fea42ffb4e3e656d72a76f845e109",
     "database/original.db": "2dc9156f1b80a4c5dadd20bc0cfde6f4e24835d9c6fd0eac14f5313ae6b3741c",
+    "demo.mp4": "ccc6ac48edb060e7f46898d8abf47afb516630ef27799a71f299e48a56f30d2f",
+    "demo_poster.jpg": "bdf6b9b9adfe9a164a8883e2e801422e4bf6685c0655d41b31068c2a7bde2b89",
     "docs/FULL_KEY_GUIDE_REFERENCE.md": "201c773c91f1c6b0f01b4ef2c5c51bf3af9000f1119723b70be9f7733eb2d814",
     "docs/HIDDEN_RELEASE_EVIDENCE.md": "b959e57616010c6bf19e3f070f14cb250f05c6919f3d1be776ba460528cb2712",
     "docs/PROBE_FIELDS_REFERENCE.md": "9c3c504123aea89e97b34095154a4474814edcd5fd171e94bb2ca0149d1ba59e",
